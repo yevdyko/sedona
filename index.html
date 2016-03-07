@@ -2,11 +2,208 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Гостиницы Седоны</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <!-- begin wrapper -->
+    <div class="wrapper">
+
+      <!-- begin header -->
+      <header class="header">
+
+        <!-- begin logo -->
+        <div class="logo">
+          <img src="http://placehold.it/102x83" width="102" height="83" alt="Sedona">
+        </div>
+        <!-- end logo -->
+
+        <!-- begin menu -->
+        <nav class="menu">
+          <button class="menu__toggle menu__toggle--closed">Открыть меню</button>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--closed">
+              <a href="#" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Фото и видео</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Форма отзыва</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end menu -->
+
+      </header>
+      <!-- end header -->
+
+      <!-- begin intro -->
+      <div class="intro">
+        <img class="intro__image" src="http://placehold.it/320x390" width="320" height="390" alt="Welcome to the gorgeous Sedona">
+      </div>
+      <!-- end intro -->
+
+      <!-- begin features -->
+      <section class="features">
+
+        <!-- begin features-header -->
+        <header class="features__header">
+          <h1 class="features__title">
+            Седона — небольшой городок в&nbsp;Аризоне, заслуживающий большего!
+          </h1>
+          <p class="features__description">
+            Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!
+          </p>
+        </header>
+        <!-- end features-header -->
+
+        <!-- begin features-row -->
+        <div class="features__row">
+
+          <!-- feature-blue -->
+          <div class="feature feature--blue">
+            <h2 class="feature__title">Настоящий городок</h2>
+            <div class="feature__number">— №1 —</div>
+            <p class="feature__text">
+              Cедона не&nbsp;атракцион для туристов, там течет своя жизнь
+            </p>
+          </div>
+
+          <!-- feature-image -->
+          <figure class="feature-image">
+            <img src="http://placehold.it/320x260" width="320" height="260" alt="Sedona">
+          </figure>
+
+        </div>
+        <!-- end features-row -->
+
+        <!-- begin features-row -->
+        <div class="features__row">
+
+          <!-- feature-house -->
+          <div class="feature feature--icon feature--house">
+            <h2 class="feature__title">Жилье</h2>
+            <p class="feature__text">
+              Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
+            </p>
+          </div>
+
+          <!-- feature-gift -->
+          <div class="feature feature--icon feature--gift">
+            <h2 class="feature__title">Сувениры</h2>
+            <p class="feature__text">
+              Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!
+            </p>
+          </div>
+
+          <!-- feature-food -->
+          <div class="feature feature--icon feature--food">
+            <h2 class="feature__title">Еда</h2>
+            <p class="feature__text">
+              Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+            </p>
+          </div>
+
+        </div>
+        <!-- end features-row -->
+
+        <!-- begin features-row -->
+        <div class="features__row">
+
+          <!-- feature-blue -->
+          <div class="feature feature--blue">
+            <h2 class="feature__title">Там есть мост дьявола</h2>
+            <div class="feature__number">— №2 —</div>
+            <p class="feature__text">
+              Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь
+            </p>
+          </div>
+
+          <!-- feature-image -->
+          <figure class="feature-image">
+            <img src="http://placehold.it/320x260" width="320" height="260" alt="Sedona">
+          </figure>
+
+        </div>
+        <!-- end features-row -->
+
+        <!-- begin features-row -->
+        <div class="features__row">
+
+          <!-- feature -->
+          <div class="feature">
+            <h2 class="feature__title">Небольшая площадь</h2>
+            <div class="feature__number">— №3 —</div>
+            <p class="feature__text">
+              Все достопримечательности находятся очень близко
+            </p>
+          </div>
+
+          <!-- feature -->
+          <div class="feature">
+            <h2 class="feature__title">Красивая дорога</h2>
+            <div class="feature__number">— №4 —</div>
+            <p class="feature__text">
+              Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
+            </p>
+          </div>
+
+          <!-- feature -->
+          <div class="feature">
+            <h2 class="feature__title">Мало туристов</h2>
+            <div class="feature__number">— №5 —</div>
+            <p class="feature__text">
+              Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там
+            </p>
+          </div>
+
+        </div>
+        <!-- end features-row -->
+
+      </section>
+      <!-- end features -->
+
+      <!-- begin search -->
+      <section class="search">
+        <h3 class="search__title">Заинтересовались?</h3>
+        <p class="search__text">
+          Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем Вам лучшие предложения гостиниц в&nbsp;Седоне
+        </p>
+        <a href="#" class="btn btn--search">Найти гостиницу</a>
+        <div class="search__map" id="search__map"></div>
+      </section>
+      <!-- end search -->
+
+      <!-- begin footer -->
+      <footer class="footer">
+
+        <!-- title -->
+        <div class="footer__hashtag">#visitsedona</div>
+
+        <!-- social  -->
+        <div class="social">
+          <a href="#" class="social__btn social__btn--tw">Twitter</a>
+          <a href="#" class="social__btn social__btn--fb">Facebook</a>
+          <a href="#" class="social__btn social__btn--yt">Youtube</a>
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright">
+          <span class="copyright__text">Разработано</span>
+          <a href="#" class="copyright__link">
+            <img src="http://placehold.it/320x390" width="" height="" alt="HTML Academy">
+          </a>
+        </div>
+
+      </footer>
+      <!-- end footer -->
+
+    </div>
+    <!-- end wrapper -->
 
   </body>
 </html>
