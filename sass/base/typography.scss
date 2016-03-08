@@ -1,0 +1,67 @@
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "PT Sans";
+
+  src: url(../../fonts/ptsans.woff) format("woff"),
+       url(../../fonts/ptsans.woff2) format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "PT Sans";
+
+  src: url(../../fonts/ptsansbold.woff) format("woff"),
+       url(../../fonts/ptsansbold.woff2) format("woff2");
+}
+
+$font-family-base: "PT Sans", Helvetica, Arial, sans-serif;
+
+$line-height-base: 26px;
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: $font-family-base;
+}
+
+h1,
+h2,
+legend,
+textarea {
+  font-size: 18px;
+  line-height: $line-height-base;
+  font-weight: 700;
+  font-family: $font-family-base;
+}
+
+h3 {
+  font-size: 21px;
+  line-height: $line-height-base;
+  font-weight: 700;
+  font-family: $font-family-base;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-family: $font-family-base;
+}
+
+label {
+  font-size: 14px;
+  line-height: $line-height-base;
+  font-weight: 400;
+  font-family: $font-family-base;
+}
+
+figcaption,
+span {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: $font-family-base;
+}
