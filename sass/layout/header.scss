@@ -3,7 +3,12 @@
 }
 
 .logo {
-  text-align: center;
+
+  & img {
+    display: block;
+
+    margin: $margin-center;
+  }
 }
 
 .menu {
