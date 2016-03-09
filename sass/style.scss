@@ -1,3 +1,18 @@
-body {
-  background: blue;
-}
+/* helpers */
+
+@import "helpers/mixins";
+@import "helpers/variables";
+
+/* base */
+
+@import "base/normalize";
+@import "base/typography";
+
+/* components */
+
+@import "wrapper";
+@import "components/header";
+@import "components/intro";
+@import "components/features";
+@import "components/search";
+@import "components/footer";
