@@ -10,9 +10,19 @@
 
 /* components */
 
-@import "wrapper";
-@import "components/header";
 @import "components/intro";
 @import "components/features";
 @import "components/search";
-@import "components/footer";
+@import "components/feedback";
+@import "components/feedback-form";
+@import "components/posts";
+@import "components/presentation";
+@import "components/player";
+@import "components/buttons";
+
+/* layout */
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/forms";
