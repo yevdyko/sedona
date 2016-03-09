@@ -1,0 +1,15 @@
+.feedback {
+  text-align: center;
+
+  &__header {
+    @include outlined(red);
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

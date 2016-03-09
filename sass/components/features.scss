@@ -1,0 +1,49 @@
+.features {
+  text-align: center;
+
+  &__header {
+    @include outlined(red);
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__row {
+
+  }
+}
+
+.feature {
+  @include outlined;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__number {
+
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &--blue {
+
+  }
+}
+
+.feature-image {
+  margin: 0;
+
+  & img {
+    display: block;
+
+    @include outlined(red);
+  }
+}
