@@ -13,3 +13,19 @@
     margin: 0;
   }
 }
+
+.feedback-form {
+  @include outlined;
+
+  &__title {
+    margin: $margin-center;
+  }
+
+  &__input {
+
+  }
+
+  &__textarea {
+
+  }
+}
