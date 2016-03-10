@@ -1,0 +1,27 @@
+.player {
+
+  &__image {
+    margin: 0;
+
+    & img {
+      display: block;
+      @include outlined;
+    }
+  }
+
+  &__controls {
+
+  }
+
+  &__scale {
+
+  }
+
+  &__bar {
+
+  }
+
+  &__buttons {
+    @include outlined(red);
+  }
+}

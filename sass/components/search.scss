@@ -1,0 +1,17 @@
+.search {
+  text-align: center;
+
+  @include outlined(red);
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__map {
+
+  }
+}

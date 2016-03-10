@@ -1,0 +1,9 @@
+.feature-image {
+  margin: 0;
+
+  img {
+    display: block;
+
+    @include outlined(red);
+  }
+}

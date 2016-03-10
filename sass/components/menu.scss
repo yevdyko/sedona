@@ -1,0 +1,36 @@
+.menu {
+  position: relative;
+
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    float: right;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 100%;
+
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: $font-weight-bold;
+    vertical-align: top;
+    @include outlined(orange);
+  }
+
+  &__link {
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+  }
+}

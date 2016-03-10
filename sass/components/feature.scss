@@ -1,0 +1,19 @@
+.feature {
+  @include outlined;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__number {
+
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &--blue {
+
+  }
+}
