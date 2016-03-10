@@ -1,7 +1,7 @@
 .feature-image {
   margin: 0;
 
-  & img {
+  img {
     display: block;
 
     @include outlined(red);
