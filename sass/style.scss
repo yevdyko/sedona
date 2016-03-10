@@ -10,6 +10,9 @@
 
 /* components */
 
+@import "components/header";
+@import "components/logo";
+@import "components/menu";
 @import "components/intro";
 @import "components/features";
 @import "components/feature";
@@ -21,10 +24,11 @@
 @import "components/presentation";
 @import "components/player";
 @import "components/buttons";
+@import "components/footer";
+@import "components/social";
+@import "components/copyright";
 
 /* layout */
 
 @import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
 @import "layout/forms";
