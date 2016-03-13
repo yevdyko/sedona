@@ -1,8 +1,6 @@
 .search {
   text-align: center;
 
-  @include outlined(red);
-
   &__title {
     margin: 0;
   }
@@ -12,6 +10,50 @@
   }
 
   &__map {
+    min-height: 350px;
 
+    background: url("../../img/bg-map-mobile.jpg");
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .search {
+    text-align: center;
+
+    &__title {
+      margin: 0;
+    }
+
+    &__text {
+      width: 450px;
+      margin: $margin-center;
+    }
+
+    &__map {
+      min-height: 350px;
+
+      background: url("../../img/bg-map-mobile.jpg");
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .search {
+    text-align: center;
+
+    &__title {
+      margin: 0;
+    }
+
+    &__text {
+      width: 450px;
+      margin: $margin-center;
+    }
+
+    &__map {
+      min-height: 350px;
+
+      background: url("../../img/bg-map-mobile.jpg");
+    }
   }
 }

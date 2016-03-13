@@ -1,8 +1,33 @@
 .footer {
   text-align: center;
-  @include outlined;
 
   &__hashtag {
 
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .footer {
+    min-height: 120px;
+    text-align: center;
+
+    &__hashtag {
+
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .footer {
+    min-height: 120px;
+
+    font-size: 0;
+    text-align: center;
+
+    &__hashtag {
+      display: inline-block;
+
+      font-size: 14px;
+    }
   }
 }

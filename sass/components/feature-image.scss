@@ -3,7 +3,31 @@
 
   img {
     display: block;
+  }
+}
 
-    @include outlined(red);
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .feature-image {
+    float: right;
+    margin: 0;
+
+    img {
+      display: block;
+      width: 512px;
+      min-height: 256px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .feature-image {
+    float: right;
+    margin: 0;
+
+    img {
+      display: block;
+      width: 800px;
+      max-height: 256px;
+    }
   }
 }

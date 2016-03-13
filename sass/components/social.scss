@@ -15,3 +15,49 @@
     }
   }
 }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .social {
+    display: inline-block;
+
+    font-size: 14px;
+
+    &__btn {
+
+      &--tw {
+
+      }
+
+      &--fb {
+
+      }
+
+      &--yt {
+
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .social {
+    display: inline-block;
+
+    font-size: 14px;
+
+    &__btn {
+
+      &--tw {
+
+      }
+
+      &--fb {
+
+      }
+
+      &--yt {
+
+      }
+    }
+  }
+}

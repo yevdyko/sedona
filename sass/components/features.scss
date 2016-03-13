@@ -2,11 +2,12 @@
   text-align: center;
 
   &__header {
-    @include outlined(red);
+
   }
 
   &__title {
     margin: 0;
+
   }
 
   &__description {
@@ -15,5 +16,61 @@
 
   &__row {
 
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .features {
+
+    &__header {
+
+    }
+
+    &__title {
+      margin: $margin-center;
+      width: 450px;
+
+      text-transform: uppercase;
+
+    }
+
+    &__description {
+      margin: 0;
+
+      text-transform: uppercase;
+    }
+
+    &__row {
+      @include clearfix;
+      min-height: 256px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .features {
+
+    &__header {
+
+    }
+
+    &__title {
+      margin: $margin-center;
+      width: 450px;
+
+      text-transform: uppercase;
+
+    }
+
+    &__description {
+      margin: 0;
+
+      text-transform: uppercase;
+    }
+
+    &__row {
+      @include clearfix;
+      min-height: 256px;
+    }
   }
 }

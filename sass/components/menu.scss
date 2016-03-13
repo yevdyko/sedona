@@ -1,11 +1,7 @@
 .menu {
-  position: relative;
+  min-height: 160px;
 
   &__toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-
     float: right;
   }
 
@@ -24,7 +20,6 @@
     line-height: 40px;
     font-weight: $font-weight-bold;
     vertical-align: top;
-    @include outlined(orange);
   }
 
   &__link {
@@ -32,5 +27,53 @@
 
     text-align: center;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .menu {
+    min-height: 0;
+    margin: $margin-center;
+
+    text-align: center;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__item {
+      margin-top: 12px;
+      width: 150px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .menu {
+    min-height: 0;
+    margin: $margin-center;
+
+    text-align: center;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__item {
+      margin-top: 12px;
+      width: 150px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
   }
 }
