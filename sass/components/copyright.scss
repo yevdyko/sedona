@@ -1,42 +1,52 @@
 .copyright {
+  padding: 20px 0;
+  font-size: 0;
+  text-align: center;
+
+  @include outlined(black);
 
   &__text {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
 
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    vertical-align: middle;
+    text-transform: uppercase;
   }
 
   &__link {
+    display: inline-block;
 
+    vertical-align: middle;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .copyright {
     display: inline-block;
+    width: 33.3%;
+    padding: 40px 0;
 
-    font-size: 14px;
+    font-size: $font-size-base;
+    vertical-align: middle;
 
-    &__text {
+    @include outlined(black);
 
-    }
-
-    &__link {
-
-    }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .copyright {
     display: inline-block;
+    width: 33.3%;
+    padding: 40px 0;
 
-    font-size: 14px;
+    font-size: $font-size-base;
+    vertical-align: middle;
 
-    &__text {
+    @include outlined(black);
 
-    }
-
-    &__link {
-
-    }
   }
 }

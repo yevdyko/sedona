@@ -1,12 +1,13 @@
 .logo {
   position: absolute;
-  top: 160px;
+  top: 224px;
   left: 50%;
 
   transform: translate(-50%, 0);
 
   &__image {
-
+    width: 102px;
+    height: 84px;
   }
 }
 
@@ -16,8 +17,8 @@
     top: 0;
 
     &__image {
-      height: 80px;
-      width: 80px;
+      width: 102px;
+      height: 84px;
     }
   }
 }
@@ -28,8 +29,8 @@
     top: 0;
 
     &__image {
-      height: 80px;
-      width: 80px;
+      width: 102px;
+      height: 84px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .menu {
-  min-height: 160px;
+  min-height: 278px;
 
   &__toggle {
     float: right;
@@ -8,47 +8,65 @@
   &__list {
     margin: 0;
     padding: 0;
-
-    font-size: 0;
+    text-align: center;
   }
 
   &__item {
-    display: inline-block;
     width: 100%;
 
     font-size: 18px;
     line-height: 40px;
     font-weight: $font-weight-bold;
     vertical-align: top;
+
+    color: #ffffff;
+    background: #81b3d2;
+
+    @include outlined(white);
   }
 
   &__link {
     display: block;
+    padding: 8px 0;
 
     text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .menu {
-    min-height: 0;
-    margin: $margin-center;
-
-    text-align: center;
+    min-height: 56px;
 
     &__toggle {
       display: none;
     }
 
+    &__list {
+      font-size: 0;
+    }
+
     &__item {
-      margin-top: 12px;
-      width: 150px;
+      display: inline-block;
+      width: 20%;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+
+      color: #000000;
+      background: #ffffff;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 20%;
     }
 
     &__link {
-      font-size: 14px;
-      line-height: 26px;
+      display: block;
+      padding: 15px 0;
+
       text-transform: uppercase;
     }
   }
@@ -56,23 +74,36 @@
 
 @media (min-width: $screen-lg-min) {
   .menu {
-    min-height: 0;
-    margin: $margin-center;
-
-    text-align: center;
+    min-height: 56px;
 
     &__toggle {
       display: none;
     }
 
+    &__list {
+      font-size: 0;
+    }
+
     &__item {
-      margin-top: 12px;
-      width: 150px;
+      display: inline-block;
+      width: 20%;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+
+      color: #000000;
+      background: #ffffff;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 20%;
     }
 
     &__link {
-      font-size: 14px;
-      line-height: 26px;
+      display: block;
+      padding: 15px 0;
+
       text-transform: uppercase;
     }
   }

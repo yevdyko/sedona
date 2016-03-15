@@ -1,30 +1,33 @@
 .intro {
-  text-align: center;
+  @include outlined(black);
 
   &__image {
     display: block;
-
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    height: 389px;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .intro {
+    @include outlined(black);
 
     &__image {
-      margin: $margin-center;
+      display: block;
       width: 100%;
+      height: 518px;
     }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .intro {
+    @include outlined(black);
 
     &__image {
-      margin: $margin-center;
+      display: block;
       width: 100%;
+      height: 518px;
     }
   }
 }
