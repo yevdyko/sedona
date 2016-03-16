@@ -13,3 +13,89 @@
 
   }
 }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .feedback-form {
+    font-size: 0;
+
+    @include outlined;
+
+    &__item {
+      display: inline-block;
+      min-height: 150px;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+
+      border: none;
+
+      @include outlined(black);
+    }
+
+    &__item:nth-child(3),
+    &__item:nth-child(4),
+    &__item:nth-child(5) {
+      width: 100%;
+    }
+
+    &__title {
+      margin: $margin-center;
+    }
+
+    &__input {
+
+    }
+
+    &__textarea {
+      overflow: auto;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .feedback-form {
+    font-size: 0;
+    @include outlined;
+
+    &__item {
+      display: inline-block;
+      min-height: 150px;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+
+      border: none;
+
+      @include outlined(black);
+    }
+    &__item:nth-child(3),
+    &__item:nth-child(4),
+    &__item:nth-child(5) {
+      width: 100%;
+    }
+
+    &__title {
+      margin: $margin-center;
+    }
+
+    &__input {
+
+    }
+
+    &__textarea {
+
+    }
+  }
+
+
+}
+
+
