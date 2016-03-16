@@ -1,8 +1,36 @@
 .logo {
+  position: absolute;
+  top: 224px;
+  left: 50%;
 
-  img {
-    display: block;
+  transform: translate(-50%, 0);
 
-    margin: $margin-center;
+  &__image {
+    width: 102px;
+    height: 84px;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .logo {
+    position: absolute;
+    top: 0;
+
+    &__image {
+      width: 102px;
+      height: 84px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .logo {
+    position: absolute;
+    top: 0;
+
+    &__image {
+      width: 102px;
+      height: 84px;
+    }
   }
 }

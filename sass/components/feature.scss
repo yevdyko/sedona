@@ -1,19 +1,111 @@
 .feature {
-  @include outlined;
+  min-height: 140px;
+
+  @include outlined(black);
 
   &__title {
     margin: 0;
+
+    font-size: 18px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-bold;
   }
 
   &__number {
-
+    font-size: $font-size-base;
+    line-height: 21px;
+    font-weight: $font-weight-bold;
   }
 
   &__text {
     margin: 0;
+
+    font-size: $font-size-base;
+    line-height: 21px;
+    font-weight: $font-weight-bold;
   }
 
   &--blue {
+    min-height: 190px;
+    color: #ffffff;
+    background-color: #81b3d2;
+  }
 
+  &--grey {
+    min-height: 168px;
+    background-color: #eeeeee;
   }
 }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .feature {
+    float: left;
+    width: 33.33%;
+    min-height: 256px;
+
+    @include outlined(black);
+
+    &__title {
+      margin: 0;
+
+      font-size: 18px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+    }
+
+    &__number {
+      font-size: $font-size-base;
+      line-height: 21px;
+      font-weight: $font-weight-bold;
+    }
+
+    &__text {
+      margin: 0;
+
+      font-size: $font-size-base;
+      line-height: 21px;
+      font-weight: $font-weight-bold;
+    }
+
+    &--icon {
+
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .feature {
+    float: left;
+    width: 33.33%;
+    height: 256px;
+
+    @include outlined(black);
+
+    &__title {
+      margin: 0;
+
+      font-size: 18px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+    }
+
+    &__number {
+      font-size: $font-size-base;
+      line-height: 21px;
+      font-weight: $font-weight-bold;
+    }
+
+    &__text {
+      margin: 0;
+
+      font-size: $font-size-base;
+      line-height: 21px;
+      font-weight: $font-weight-bold;
+    }
+
+    &--icon {
+
+    }
+  }
+}
+

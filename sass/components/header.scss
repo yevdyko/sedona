@@ -1,3 +1,21 @@
 .header {
-  @include outlined;
+  position: relative;
+  min-height: 216px;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .header {
+    position: relative;
+    min-height: 56px;
+
+    @include outlined(black);
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .header {
+    min-height: 56px;
+
+    @include outlined(black);
+  }
 }

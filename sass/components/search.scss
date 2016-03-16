@@ -1,17 +1,87 @@
 .search {
   text-align: center;
 
-  @include outlined(red);
-
   &__title {
     margin: 0;
+
+    font-size: 21px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-bold;
   }
 
   &__text {
     margin: 0;
+
+    font-size: $font-size-base;
+    line-height: 24px;
+    font-weight: $font-weight-normal;
   }
 
   &__map {
+    min-height: 350px;
 
+    background: url("../../img/bg-map-mobile.jpg");
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .search {
+    text-align: center;
+
+    &__title {
+      margin: 0;
+
+      font-size: 30px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      width: 450px;
+      margin: $margin-center;
+
+      font-size: $font-size-base;
+      line-height: 24px;
+      font-weight: $font-weight-normal;
+      text-transform: uppercase;
+    }
+
+    &__map {
+      min-height: 350px;
+
+      background: url("../../img/bg-map-mobile.jpg");
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .search {
+    text-align: center;
+
+    &__title {
+      margin: 0;
+
+      font-size: 30px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      width: 450px;
+      margin: $margin-center;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+    }
+
+    &__map {
+      min-height: 350px;
+
+      background: url("../../img/bg-map-mobile.jpg");
+    }
   }
 }

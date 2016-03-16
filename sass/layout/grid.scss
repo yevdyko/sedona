@@ -1,4 +1,13 @@
 .wrapper {
-  max-width: $screen-xs-min;
+  min-width: $screen-xs-min;
+  max-width: $screen-xs-max;
   margin: $margin-center;
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    width: $screen-sm-max;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    min-width: $screen-lg-min;
+  }
 }

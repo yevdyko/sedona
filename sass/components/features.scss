@@ -2,7 +2,7 @@
   text-align: center;
 
   &__header {
-    @include outlined(red);
+
   }
 
   &__title {
@@ -15,5 +15,53 @@
 
   &__row {
 
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .features {
+
+    &__header {
+
+    }
+
+    &__title {
+      margin: $margin-center;
+      width: 450px;
+    }
+
+    &__description {
+      margin: 0;
+    }
+
+    &__row {
+      @include clearfix;
+
+      min-height: 256px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .features {
+
+    &__header {
+
+    }
+
+    &__title {
+      margin: $margin-center;
+      width: 450px;
+    }
+
+    &__description {
+      margin: 0;
+    }
+
+    &__row {
+      @include clearfix;
+
+      min-height: 256px;
+    }
   }
 }

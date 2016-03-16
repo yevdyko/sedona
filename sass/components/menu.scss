@@ -1,36 +1,112 @@
 .menu {
-  position: relative;
+  min-height: 278px;
 
   &__toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-
     float: right;
   }
 
   &__list {
     margin: 0;
     padding: 0;
-
-    font-size: 0;
+    text-align: center;
   }
 
   &__item {
-    display: inline-block;
     width: 100%;
 
     font-size: 18px;
     line-height: 40px;
     font-weight: $font-weight-bold;
     vertical-align: top;
-    @include outlined(orange);
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: #81b3d2;
+
+    @include outlined(white);
   }
 
   &__link {
     display: block;
+    padding: 8px 0;
 
     text-align: center;
     text-decoration: none;
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .menu {
+    min-height: 56px;
+
+    @include outlined(black);
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      font-size: 0;
+    }
+
+    &__item {
+      display: inline-block;
+      width: 20%;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+      text-transform: uppercase;
+
+      color: #000000;
+      background: #ffffff;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 20%;
+    }
+
+    &__link {
+      display: block;
+      padding: 15px 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .menu {
+    min-height: 56px;
+
+    @include outlined(black);
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      font-size: 0;
+    }
+
+    &__item {
+      display: inline-block;
+      width: 20%;
+
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      vertical-align: top;
+      text-transform: uppercase;
+
+      color: #000000;
+      background: #ffffff;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 20%;
+    }
+
+    &__link {
+      display: block;
+      padding: 15px 0;
+    }
   }
 }
