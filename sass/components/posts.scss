@@ -1,46 +1,257 @@
 .posts {
-  text-align: center;
 
   &__header {
-    @include outlined(red);
+
   }
 
   &__title {
     margin: 0;
+    padding-top: 45px;
+
+    font-size: 18px;
+    line-height: $line-height-base;
+    text-align: center;
   }
 
   &__description {
-    margin: 0;
+    width: 275px;
+    margin: $margin-center;
+    padding-top: 35px;
+    padding-bottom: 52px;
+
+    font-size: $font-size-base;
+    line-height: 24px;
   }
 
   &__item {
-    @include outlined;
+    margin: $margin-center;
+    @include outlined(black);
   }
 
   &__image {
+    display: block;
+    margin: 0;
+  }
+
+  &__image img {
+    display: block;
+    width: 280px;
+    height: 280px;
     margin: $margin-center;
 
-    img {
-      display: block;
-
-      margin: $margin-center;
-      @include outlined(red);
-    }
+    @include outlined(black);
   }
 
   &__name {
+    width: 280px;
+    margin: $margin-center;
+
+    font-size: $font-size-base;
+    line-height: 24px;
+    font-weight: $font-weight-bold;
     text-align: left;
 
   }
 
   &__author {
     display: block;
+    width: 280px;
+    margin: $margin-center;
+
     text-align: left;
+    text-transform: none;
   }
 
   &__likes {
     display: block;
+    width: 280px;
+    margin: $margin-center;
 
     text-align: left;
   }
 }
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .posts {
+    width: 648px;
+    margin: $margin-center;
+    font-size: 0;
+
+    &__header {
+      min-height: 250px;
+    }
+
+    &__title {
+      margin: 0;
+      padding-top: 77px;
+
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &__description {
+      width: 430px;
+      margin: $margin-center;
+      padding-top: 35px;
+      padding-bottom: 71px;
+
+      font-size: $font-size-base;
+      line-height: 24px;
+    }
+
+    &__item {
+      position: relative;
+
+      display: inline-block;
+      min-height: 267px;
+
+      font-size: $font-size-base;
+      line-height: 21px;
+      text-align: left;
+      vertical-align: top;
+
+      overflow: hidden;
+    }
+
+    &__image {
+      display: block;
+      width: 324px;
+    }
+
+    &__image--large {
+      width: 648px;
+    }
+
+    &__image img {
+      display: block;
+      width: 100%;
+    }
+
+    &__image--large img {
+      display: block;
+      width: 100%;
+      height: 400px;
+    }
+
+    &__name {
+      width: 304px;
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    &__image--large &__name {
+      width: 628px;
+    }
+
+    &__author {
+      display: block;
+      width: 304px;
+      padding-left: 20px;
+
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__image--large + &__author {
+      width: 628px;
+    }
+
+    &__likes {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+
+      display: block;
+
+      text-align: right;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .posts {
+    font-size: 0;
+    text-align: center;
+
+    &__header {
+      text-transform: uppercase;
+    }
+
+    &__title {
+      margin: 0;
+      padding-top: 114px;
+
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &__description {
+      width: 430px;
+      margin: $margin-center;
+      padding-top: 35px;
+      padding-bottom: 73px;
+
+      font-size: $font-size-base;
+      line-height: 24px;
+    }
+
+    &__item {
+      position: relative;
+
+      display: inline-block;
+
+      font-size: $font-size-base;
+      line-height: 21px;
+      vertical-align: top;
+
+      @include outlined(black);
+    }
+
+    &__image {
+      display: block;
+    }
+
+    &__image img {
+      display: block;
+      width: 400px;
+    }
+
+    &__image--large img {
+      display: block;
+      width: 1200px;
+      height: 400px;
+    }
+
+    &__name {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      padding-left: 20px;
+      text-align: left;
+
+    }
+
+    &__author {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      padding-left: 20px;
+
+      text-align: left;
+      text-transform: none;
+    }
+
+    &__likes {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+
+      display: block;
+
+      text-align: right;
+    }
+  }
+}
+

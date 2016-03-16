@@ -18,6 +18,7 @@
     line-height: 40px;
     font-weight: $font-weight-bold;
     vertical-align: top;
+    text-transform: uppercase;
 
     color: #ffffff;
     background: #81b3d2;
@@ -30,7 +31,6 @@
     padding: 8px 0;
 
     text-align: center;
-    text-transform: uppercase;
     text-decoration: none;
   }
 }
@@ -39,6 +39,8 @@
   .menu {
     min-height: 56px;
 
+    @include outlined(black);
+
     &__toggle {
       display: none;
     }
@@ -54,6 +56,7 @@
       font-size: $font-size-base;
       line-height: $line-height-base;
       vertical-align: top;
+      text-transform: uppercase;
 
       color: #000000;
       background: #ffffff;
@@ -66,8 +69,6 @@
     &__link {
       display: block;
       padding: 15px 0;
-
-      text-transform: uppercase;
     }
   }
 }
@@ -76,6 +77,8 @@
   .menu {
     min-height: 56px;
 
+    @include outlined(black);
+
     &__toggle {
       display: none;
     }
@@ -91,6 +94,7 @@
       font-size: $font-size-base;
       line-height: $line-height-base;
       vertical-align: top;
+      text-transform: uppercase;
 
       color: #000000;
       background: #ffffff;
@@ -103,8 +107,6 @@
     &__link {
       display: block;
       padding: 15px 0;
-
-      text-transform: uppercase;
     }
   }
 }

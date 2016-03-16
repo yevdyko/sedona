@@ -16,13 +16,12 @@
 
         <!-- begin logo -->
         <div class="logo">
-          <img src="http://placehold.it/102x83" width="102" height="83" alt="Sedona">
+          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
         </div>
         <!-- end logo -->
 
         <!-- begin menu -->
         <nav class="menu">
-          <button class="menu__toggle menu__toggle--closed">Открыть меню</button>
           <ul class="menu__list">
             <li class="menu__item menu__item--closed">
               <a href="index.html" class="menu__link">Главная</a>
@@ -36,6 +35,7 @@
             <li class="menu__item">
               <a href="https://htmlacademy.ru" class="menu__link">HTML Academy</a>
             </li>
+            <button class="menu__toggle menu__toggle--closed">Открыть меню</button>
           </ul>
         </nav>
         <!-- end menu -->
@@ -45,7 +45,7 @@
 
       <!-- begin intro -->
       <div class="intro">
-        <img class="intro__image" src="http://placehold.it/320x160" width="320" height="160" alt="Sedona">
+        <img class="intro__image" src="http://placehold.it/768x389" width="768" height="389" alt="Welcome to the gorgeous Sedona">
       </div>
       <!-- end intro -->
 
@@ -59,10 +59,12 @@
             Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
           </p>
         </header>
+        <div class="posts__row">
+
 
         <!-- posts-item -->
         <article class="posts__item">
-          <figure class="posts__image">
+          <figure class="posts__image posts__image--large">
             <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
             <figcaption class="posts__name">Неродные просторы</figcaption>
           </figure>
@@ -99,7 +101,7 @@
           <span class="posts__author">Автор: Антон</span>
           <span class="posts__likes posts__likes--icon">254</span>
         </article>
-
+        </div>
       </section>
       <!-- end posts -->
 
@@ -117,20 +119,22 @@
         <!-- player -->
         <div class="player">
           <figure class="player__image">
-            <img src="http://placehold.it/320x200" width="320" height="200" alt="Видео">
+            <img src="http://placehold.it/800x500" width="800" height="500" alt="Видео">
           </figure>
 
           <div class="player__controls">
             <div class="player__scale">
               <div class="player__bar"></div>
             </div>
+
+            <div class="player__buttons">
+              <button class="btn btn--repeat">Repeat</button>
+              <button class="btn btn--fullscreen">Fullscreen</button>
+              <button class="btn btn--subtitles">Subtitles</button>
+            </div>
           </div>
 
-          <div class="player__buttons">
-            <button class="btn btn--repeat">Repeat</button>
-            <button class="btn btn--subtitles">Subtitles</button>
-            <button class="btn btn--fullscreen">Fullscreen</button>
-          </div>
+
         </div>
 
       </section>
@@ -153,7 +157,7 @@
         <div class="copyright">
           <span class="copyright__text">Разработано</span>
           <a href="https://htmlacademy.ru" class="copyright__link">
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
 

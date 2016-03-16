@@ -31,6 +31,7 @@ textarea {
   line-height: $line-height-base;
   font-weight: $font-weight-bold;
   font-family: $font-family-base;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -38,6 +39,7 @@ h3 {
   line-height: $line-height-base;
   font-weight: $font-weight-bold;
   font-family: $font-family-base;
+  text-transform: uppercase;
 }
 
 p {
@@ -45,6 +47,7 @@ p {
   line-height: 21px;
   font-weight: $font-weight-normal;
   font-family: $font-family-base;
+  text-transform: uppercase;
 }
 
 label {
@@ -52,6 +55,7 @@ label {
   line-height: $line-height-base;
   font-weight: $font-weight-normal;
   font-family: $font-family-base;
+  text-transform: uppercase;
 }
 
 figcaption,
@@ -60,4 +64,5 @@ span {
   line-height: 24px;
   font-weight: $font-weight-bold;
   font-family: $font-family-base;
+  text-transform: uppercase;
 }

@@ -2,12 +2,11 @@
   text-align: center;
 
   &__header {
-    text-transform: uppercase;
+
   }
 
   &__title {
     margin: 0;
-
   }
 
   &__description {
@@ -29,19 +28,15 @@
     &__title {
       margin: $margin-center;
       width: 450px;
-
-      text-transform: uppercase;
-
     }
 
     &__description {
       margin: 0;
-
-      text-transform: uppercase;
     }
 
     &__row {
       @include clearfix;
+
       min-height: 256px;
     }
   }
@@ -57,19 +52,15 @@
     &__title {
       margin: $margin-center;
       width: 450px;
-
-      text-transform: uppercase;
-
     }
 
     &__description {
       margin: 0;
-
-      text-transform: uppercase;
     }
 
     &__row {
       @include clearfix;
+
       min-height: 256px;
     }
   }
