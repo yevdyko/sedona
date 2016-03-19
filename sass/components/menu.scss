@@ -1,37 +1,88 @@
-.menu {
-  min-height: 278px;
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  .menu {
+    position: relative;
+    min-height: 279px;
 
-  &__toggle {
-    float: right;
-  }
+    &__list {
+      position: relative;
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-  &__item {
-    width: 100%;
+    &__item {
+      width: 100%;
 
-    font-size: 18px;
-    line-height: 40px;
-    font-weight: $font-weight-bold;
-    vertical-align: top;
-    text-transform: uppercase;
+      font-size: 18px;
+      line-height: 40px;
+      font-weight: $font-weight-bold;
+      vertical-align: top;
+      text-transform: uppercase;
 
-    color: #ffffff;
-    background: #81b3d2;
+      color: #ffffff;
+      background: #81b3d2;
 
-    @include outlined(white);
-  }
+      border-top: 1px solid #9ac2db;
+      border-bottom: 1px solid #678fa8;
 
-  &__link {
-    display: block;
-    padding: 8px 0;
+      &:hover {
+        color: #ffffff;
+        background: #669ec0;
+      }
 
-    text-align: center;
-    text-decoration: none;
+      &:active {
+        background: #5496bd;
+
+      &:active &__link {
+          opacity: 0.3;
+        }
+      }
+
+      &:last-child {
+        border-bottom: none;
+        box-shadow: inset 0 -10px 5px -5px #6d97b1;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 7px 0;
+
+      text-align: center;
+      text-decoration: none;
+    }
+
+    &__toggle,
+    &__toggle::before,
+    &__toggle::after {
+      content: "";
+      position: absolute;
+      top: 248px;
+      right: 20px;
+
+      display: block;
+      padding: 0;
+      width: 23px;
+      height: 4px;
+
+      font-size: 0;
+      line-height: 0;
+
+      background: #81b3d2;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__toggle::before {
+      top: 8px;
+      right: 0px;
+    }
+
+    &__toggle::after {
+      top: -8px;
+      right: 0px;
+    }
   }
 }
 
@@ -39,14 +90,18 @@
   .menu {
     min-height: 56px;
 
-    @include outlined(black);
-
     &__toggle {
       display: none;
     }
 
     &__list {
+      position: relative;
+
+      margin: 0;
+      padding: 0;
+
       font-size: 0;
+      text-align: center;
     }
 
     &__item {
@@ -60,6 +115,8 @@
 
       color: #000000;
       background: #ffffff;
+
+      border: 0;
     }
 
     &__item:nth-child(2) {
@@ -69,6 +126,17 @@
     &__link {
       display: block;
       padding: 15px 0;
+
+      text-align: center;
+      text-decoration: none;
+
+      &:hover {
+        color: $color-blue;
+      }
+
+      &:active {
+        color: #dadada;
+      }
     }
   }
 }
@@ -77,14 +145,18 @@
   .menu {
     min-height: 56px;
 
-    @include outlined(black);
-
     &__toggle {
       display: none;
     }
 
     &__list {
+      position: relative;
+
+      margin: 0;
+      padding: 0;
+
       font-size: 0;
+      text-align: center;
     }
 
     &__item {
@@ -98,6 +170,8 @@
 
       color: #000000;
       background: #ffffff;
+
+      border: 0;
     }
 
     &__item:nth-child(2) {
@@ -107,6 +181,19 @@
     &__link {
       display: block;
       padding: 15px 0;
+
+      text-align: center;
+      text-decoration: none;
+
+      color: #000000;
+
+      &:hover {
+        color: $color-blue;
+      }
+
+      &:active {
+        color: #dadada;
+      }
     }
   }
 }

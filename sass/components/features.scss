@@ -1,37 +1,99 @@
-.features {
-  text-align: center;
+@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+  .features {
+    text-align: center;
 
-  &__header {
+    &__header {
+      position: relative;
 
-  }
+      margin: $margin-center;
+    }
 
-  &__title {
-    margin: 0;
-  }
+    &__header::before,
+    &__header:after {
+      content: "";
 
-  &__description {
-    margin: 0;
-  }
+      position: absolute;
 
-  &__row {
+      left: 0;
+      z-index: 10;
 
+      display: block;
+      width: 100%;
+
+      background-size: 50.1% 100%;
+      background-repeat: no-repeat;
+      background-position: 0 0, 100% 0;
+    }
+
+    &__header::before {
+      top: -26px;
+
+      height: 26px;
+
+      background-image: linear-gradient(to top right, #ffffff 50%, transparent 50%),
+                        linear-gradient(to top left, #ffffff 50%, transparent 50%);
+    }
+
+    &__header::after {
+      bottom: -16px;
+
+      height: 16px;
+
+      background-image: linear-gradient(to top right, transparent 50%, #ffffff 50%),
+                        linear-gradient(to top left, transparent 50%, #ffffff 50%);
+    }
+
+    &__title {
+      width: 270px;
+      margin: $margin-center;
+      padding-top: 42px;
+      padding-bottom: 32px;
+    }
+
+    &__description {
+      width: 270px;
+      margin: $margin-center;
+      padding-bottom: 26px;
+
+      line-height: 26px;
+    }
+
+    &__row {
+
+    }
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .features {
+    text-align: center;
 
     &__header {
-
+      margin: $margin-center;
     }
 
     &__title {
-      margin: $margin-center;
       width: 450px;
+      margin: $margin-center;
+      padding-top: 52px;
+      padding-bottom: 34px;
+
+      font-size: 21px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+
+      text-align: center;
     }
 
     &__description {
-      margin: 0;
+      margin: $margin-center;
+      padding-bottom: 52px;
+
+      font-size: 14px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-normal;
+
+      text-align: center;
     }
 
     &__row {
@@ -44,18 +106,34 @@
 
 @media (min-width: $screen-lg-min) {
   .features {
+    text-align: center;
 
     &__header {
-
+      margin: $margin-center;
     }
 
     &__title {
-      margin: $margin-center;
       width: 450px;
+      margin: $margin-center;
+      padding-top: 52px;
+      padding-bottom: 34px;
+
+      font-size: 21px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-bold;
+
+      text-align: center;
     }
 
     &__description {
-      margin: 0;
+      margin: $margin-center;
+      padding-bottom: 52px;
+
+      font-size: 14px;
+      line-height: $line-height-base;
+      font-weight: $font-weight-normal;
+
+      text-align: center;
     }
 
     &__row {
