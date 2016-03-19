@@ -1,96 +1,63 @@
-@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
-  .search {
-    text-align: center;
+.search {
+  text-align: center;
 
-    &__title {
-      margin: 0;
-      padding-top: 29px;
-      padding-bottom: 23px;
+  &__title {
+    margin: 0;
+    padding-top: 29px;
+    padding-bottom: 23px;
 
-      font-size: 21px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-bold;
-    }
+    font-size: 21px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-bold;
+  }
 
-    &__text {
-      width: 280px;
-      margin: $margin-center;
-      padding-bottom: 36px;
+  &__text {
+    width: 280px;
+    margin: $margin-center;
+    padding-bottom: 36px;
 
-      font-size: $font-size-base;
-      line-height: 24px;
-      font-weight: $font-weight-normal;
-    }
+    font-size: $font-size-base;
+    line-height: 24px;
+    font-weight: $font-weight-normal;
+  }
 
-    &__map {
-      min-height: 350px;
+  &__map {
+    min-height: 350px;
 
-      background: url("../../img/bg-map-mobile.jpg");
-    }
+    background: url("../img/bg-map-mobile.jpg");
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .search {
-    text-align: center;
 
     &__title {
-      margin: 0;
       padding-top: 50px;
       padding-bottom: 31px;
 
       font-size: 30px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-bold;
-      text-transform: uppercase;
     }
 
     &__text {
       width: 450px;
-      margin: $margin-center;
       padding-bottom: 44px;
-
-      font-size: $font-size-base;
-      line-height: 24px;
-      font-weight: $font-weight-normal;
-    }
-
-    &__map {
-      min-height: 350px;
-
-      background: url("../../img/bg-map-mobile.jpg");
     }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .search {
-    text-align: center;
 
     &__title {
-      margin: 0;
       padding-top: 60px;
       padding-bottom: 35px;
 
       font-size: 30px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-bold;
     }
 
     &__text {
       width: 450px;
-      margin: $margin-center;
       padding-bottom: 49px;
-
-      font-size: $font-size-base;
-      line-height: 24px;
-      font-weight: $font-weight-normal;
-    }
-
-    &__map {
-      min-height: 350px;
-
-      background: url("../../img/bg-map-mobile.jpg");
     }
   }
 }

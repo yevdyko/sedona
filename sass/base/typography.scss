@@ -58,11 +58,18 @@ label {
   text-transform: uppercase;
 }
 
-figcaption,
-span {
+figcaption {
   font-size: $font-size-base;
   line-height: 24px;
   font-weight: $font-weight-bold;
+  font-family: $font-family-base;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: $font-size-base;
+  line-height: 24px;
+  font-weight: $font-weight-normal;
   font-family: $font-family-base;
   text-transform: uppercase;
 }

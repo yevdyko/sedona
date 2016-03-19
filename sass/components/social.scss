@@ -1,29 +1,27 @@
-@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
-  .social {
+.social {
 
-    &__btn {
-      display: inline-block;
-      width: 46px;
-      height: 48px;
-      margin: 20px 3px;
+  &__btn {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    margin: 20px 3px;
 
-      font-size: 0;
-      vertical-align: top;
-      text-decoration: none;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
 
-      background: #81b3d2;
+    background: $color-blue;
 
-      &--tw {
+    &--tw {
 
-      }
+    }
 
-      &--fb {
+    &--fb {
 
-      }
+    }
 
-      &--yt {
+    &--yt {
 
-      }
     }
   }
 }
@@ -33,20 +31,11 @@
     display: inline-block;
     width: 33.3%;
 
-    font-size: 14px;
+    font-size: $font-size-base;
     vertical-align: middle;
 
     &__btn {
-      display: inline-block;
-      width: 46px;
-      height: 48px;
       margin: 36px 3px;
-
-      font-size: 0;
-      vertical-align: top;
-      text-decoration: none;
-
-      background: #81b3d2;
 
       &--tw {
 
@@ -68,21 +57,11 @@
     display: inline-block;
     width: 33.3%;
 
-    font-size: 14px;
+    font-size: $font-size-base;
     vertical-align: middle;
 
-
     &__btn {
-      display: inline-block;
-      width: 46px;
-      height: 48px;
       margin: 36px 3px;
-
-      font-size: 0;
-      vertical-align: top;
-      text-decoration: none;
-
-      background: #81b3d2;
 
       &--tw {
 

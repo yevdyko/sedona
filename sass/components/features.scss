@@ -1,86 +1,82 @@
-@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
-  .features {
-    text-align: center;
+.features {
+  text-align: center;
 
-    &__header {
-      position: relative;
+  &__header {
+    position: relative;
 
-      margin: $margin-center;
-    }
+    margin: $margin-center;
+  }
 
-    &__header::before,
-    &__header:after {
-      content: "";
+  &__header::before,
+  &__header:after {
+    content: "";
 
-      position: absolute;
+    position: absolute;
 
-      left: 0;
-      z-index: 10;
+    left: 0;
+    z-index: 10;
 
-      display: block;
-      width: 100%;
+    display: block;
+    width: 100%;
 
-      background-size: 50.1% 100%;
-      background-repeat: no-repeat;
-      background-position: 0 0, 100% 0;
-    }
+    background-size: 50.1% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100% 0;
+  }
 
-    &__header::before {
-      top: -26px;
+  &__header::before {
+    top: -26px;
 
-      height: 26px;
+    height: 26px;
 
-      background-image: linear-gradient(to top right, #ffffff 50%, transparent 50%),
-                        linear-gradient(to top left, #ffffff 50%, transparent 50%);
-    }
+    background-image: linear-gradient(to top right, #ffffff 50%, transparent 50%),
+                      linear-gradient(to top left, #ffffff 50%, transparent 50%);
+  }
 
-    &__header::after {
-      bottom: -16px;
+  &__header::after {
+    bottom: -16px;
 
-      height: 16px;
+    height: 16px;
 
-      background-image: linear-gradient(to top right, transparent 50%, #ffffff 50%),
-                        linear-gradient(to top left, transparent 50%, #ffffff 50%);
-    }
+    background-image: linear-gradient(to top right, transparent 50%, #ffffff 50%),
+                      linear-gradient(to top left, transparent 50%, #ffffff 50%);
+  }
 
-    &__title {
-      width: 270px;
-      margin: $margin-center;
-      padding-top: 42px;
-      padding-bottom: 32px;
-    }
+  &__title {
+    width: 270px;
+    margin: $margin-center;
+    padding-top: 42px;
+    padding-bottom: 32px;
 
-    &__description {
-      width: 270px;
-      margin: $margin-center;
-      padding-bottom: 26px;
+    font-size: 18px;
+    line-height: $line-height-base;
+    font-weight: $font-weight-bold;
+  }
 
-      line-height: 26px;
-    }
+  &__description {
+    width: 270px;
+    margin: $margin-center;
+    padding-bottom: 26px;
 
-    &__row {
-
-    }
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: $font-weight-normal;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .features {
-    text-align: center;
 
-    &__header {
-      margin: $margin-center;
+    &__header::after {
+      display: none;
     }
 
     &__title {
       width: 450px;
-      margin: $margin-center;
       padding-top: 52px;
       padding-bottom: 34px;
 
       font-size: 21px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-bold;
 
       text-align: center;
     }
@@ -89,38 +85,28 @@
       margin: $margin-center;
       padding-bottom: 52px;
 
-      font-size: 14px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-normal;
-
       text-align: center;
     }
 
     &__row {
       @include clearfix;
-
-      min-height: 256px;
     }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .features {
-    text-align: center;
 
-    &__header {
-      margin: $margin-center;
+    &__header::after {
+      display: none;
     }
 
     &__title {
       width: 450px;
-      margin: $margin-center;
       padding-top: 52px;
       padding-bottom: 34px;
 
       font-size: 21px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-bold;
 
       text-align: center;
     }
@@ -129,17 +115,11 @@
       margin: $margin-center;
       padding-bottom: 52px;
 
-      font-size: 14px;
-      line-height: $line-height-base;
-      font-weight: $font-weight-normal;
-
       text-align: center;
     }
 
     &__row {
       @include clearfix;
-
-      min-height: 256px;
     }
   }
 }

@@ -1,33 +1,25 @@
-@media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
-  .footer {
-    text-align: center;
+.footer {
+  text-align: center;
 
-    &__hashtag {
-      padding: 20px 0;
-      padding-top: 40px;
+  &__hashtag {
+    padding: 20px 0;
+    padding-top: 40px;
 
-      font-size: 21px;
-      line-height: 26px;
-      vertical-align: middle;
-      text-transform: uppercase;
-    }
+    font-size: 21px;
+    line-height: $line-height-base;
+    vertical-align: middle;
+    text-transform: uppercase;
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .footer {
     font-size: 0;
-    text-align: center;
 
     &__hashtag {
       display: inline-block;
       width: 33.3%;
       padding: 47px 0;
-
-      font-size: 21px;
-      line-height: 26px;
-      vertical-align: middle;
-      text-transform: uppercase;
     }
   }
 }
@@ -35,17 +27,11 @@
 @media (min-width: $screen-lg-min) {
   .footer {
     font-size: 0;
-    text-align: center;
 
     &__hashtag {
       display: inline-block;
       width: 33.3%;
       padding: 47px 0;
-
-      font-size: 21px;
-      line-height: 26px;
-      vertical-align: middle;
-      text-transform: uppercase;
     }
   }
 }
