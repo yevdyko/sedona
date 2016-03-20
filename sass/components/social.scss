@@ -10,18 +10,21 @@
     vertical-align: top;
     text-decoration: none;
 
+    color: $color-white;
     background: $color-blue;
+    background-repeat: no-repeat;
+    background-position: 50%;
 
     &--tw {
-
+      background-image: url("../img/icon-twitter.svg");
     }
 
     &--fb {
-
+      background-image: url("../img/icon-facebook.svg");
     }
 
     &--yt {
-
+      background-image: url("../img/icon-youtube.svg");
     }
   }
 }
@@ -36,18 +39,6 @@
 
     &__btn {
       margin: 36px 3px;
-
-      &--tw {
-
-      }
-
-      &--fb {
-
-      }
-
-      &--yt {
-
-      }
     }
   }
 }
@@ -62,18 +53,6 @@
 
     &__btn {
       margin: 36px 3px;
-
-      &--tw {
-
-      }
-
-      &--fb {
-
-      }
-
-      &--yt {
-
-      }
     }
   }
 }
