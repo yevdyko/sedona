@@ -4,6 +4,10 @@
     display: block;
     width: 100%;
     height: 389px;
+
+    &--photo {
+      height: 159px;
+    }
   }
 }
 
@@ -12,6 +16,10 @@
 
     &__image {
       height: 518px;
+
+      &--photo {
+        height: 290px;
+      }
     }
   }
 }
@@ -21,6 +29,10 @@
 
     &__image {
       height: 518px;
+
+      &--photo {
+        height: 301px;
+      }
     }
   }
 }
