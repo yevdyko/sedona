@@ -245,10 +245,6 @@
         padding-left: 60px;
       }
 
-      &--icon {
-        flex-wrap: nowrap;
-      }
-
       &--checkbox {
         flex-basis: 50%;
       }
@@ -323,6 +319,10 @@
     }
 
     &__input {
+
+      &--icon {
+        flex-wrap: nowrap;
+      }
 
       &--checkbox {
         flex-basis: 25%;
