@@ -88,7 +88,8 @@
           <fieldset class="feedback-form__item feedback-form__item--contacts">
             <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
 
-            <div class="feedback-form__input feedback-form__input--icon">
+            <div class="feedback-form__contacts">
+             <div class="feedback-form__input feedback-form__input--icon">
               <label class="feedback-form__label feedback-form__label--icon feedback-form__label--phone" for="phone">Контактный телефон:</label>
               <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
             </div>
@@ -97,6 +98,8 @@
               <label class="feedback-form__label feedback-form__label--icon feedback-form__label--email" for="email">Электронная почта:</label>
               <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
+          </div>
+
           </fieldset>
 
           <!-- feedback-form item -->
@@ -117,31 +120,35 @@
               <input type="radio" id="none" name="impression">
               <label class="feedback-form__label feedback-form__label--rating" for="none">Затрудняюсь ответить</label>
             </div>
+
           </fieldset>
 
           <!-- feedback-form item -->
           <fieldset class="feedback-form__item feedback-form__item--sights">
             <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
 
-            <div class="feedback-form__input">
-              <input type="checkbox" id="bridge" name="attraction" checked>
-              <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
+            <div class="feedback-form__checkbox">
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="bridge" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox feedback-form__input--park">
+                <input type="checkbox" id="park" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="park">Слайд-парк</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="mountain" name="attraction">
+                <label class="feedback-form__label feedback-form__label--checkbox" for="mountain">Гора-Колокол</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="rock" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="rock">Красные скалы</label>
+              </div>
             </div>
 
-            <div class="feedback-form__input">
-              <input type="checkbox" id="park" name="attraction" checked>
-              <label class="feedback-form__label feedback-form__label--checkbox" for="park">Слайд-парк</label>
-            </div>
-
-            <div class="feedback-form__input">
-              <input type="checkbox" id="mountain" name="attraction">
-              <label class="feedback-form__label feedback-form__label--checkbox" for="mountain">Гора-Колокол</label>
-            </div>
-
-            <div class="feedback-form__input">
-              <input type="checkbox" id="rock" name="attraction" checked>
-              <label class="feedback-form__label feedback-form__label--checkbox" for="rock">Красные скалы</label>
-            </div>
           </fieldset>
 
           <!-- feedback-form row item -->
