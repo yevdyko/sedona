@@ -1,5 +1,5 @@
 .presentation {
-  padding-bottom: 100px;
+  padding-bottom: 38px;
 
   &__header {
     width: 240px;
@@ -11,17 +11,13 @@
   &__title {
     margin: 0;
     padding-top: 35px;
-
-    font-size: 18px;
-    line-height: $line-height-base;
   }
 
   &__text {
     margin: 0;
-    padding-top: 35px;
+    padding-top: 31px;
     padding-bottom: 37px;
 
-    font-size: $font-size-base;
     line-height: 24px;
   }
 }

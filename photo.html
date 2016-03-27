@@ -23,10 +23,10 @@
         <!-- begin menu -->
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__item menu__item--closed">
+            <li class="menu__item">
               <a href="index.html" class="menu__link">Главная</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--active">
               <a href="photo.html" class="menu__link">Фото и видео</a>
             </li>
             <li class="menu__item">
@@ -45,7 +45,7 @@
 
       <!-- begin intro -->
       <div class="intro">
-        <img class="intro__image" src="http://placehold.it/768x389" width="768" height="389" alt="Welcome to the gorgeous Sedona">
+        <img class="intro__image intro__image--photo" src="img/bg-back-mobile.jpg" width="768" height="389" alt="Welcome to the gorgeous Sedona">
       </div>
       <!-- end intro -->
 
@@ -55,53 +55,65 @@
         <!-- posts-header -->
         <header class="posts__header">
           <h1 class="posts__title">Фото и видео</h1>
-          <p class="posts__description">
+          <p class="posts__text">
             Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
           </p>
         </header>
+
+        <!-- begin posts-row -->
         <div class="posts__row">
 
+          <!-- posts-item -->
+          <article class="posts__item">
+            <figure class="posts__image posts__image--large">
+              <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            </figure>
+            <div class="posts__description">
+              <span class="posts__name">Неродные просторы</span>
+              <span class="posts__author">Автор: Борис</span>
+              <span class="posts__likes posts__likes--icon">1350</span>
+            </div>
+          </article>
 
-        <!-- posts-item -->
-        <article class="posts__item">
-          <figure class="posts__image posts__image--large">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Неродные просторы">
-            <figcaption class="posts__name">Неродные просторы</figcaption>
-          </figure>
-          <span class="posts__author">Автор: Борис</span>
-          <span class="posts__likes posts__likes--icon">1350</span>
-        </article>
+          <!-- posts-item -->
+          <article class="posts__item">
+            <figure class="posts__image">
+              <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность">
+            </figure>
+            <div class="posts__description">
+              <span class="posts__name">Местная растительность</span>
+              <span class="posts__author">Автор: Сергей</span>
+              <span class="posts__likes posts__likes--icon">143</span>
+            </div>
+          </article>
 
-        <!-- posts-item -->
-        <article class="posts__item">
-          <figure class="posts__image">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Местная растительность">
-            <figcaption class="posts__name">Местная растительность</figcaption>
-          </figure>
-          <span class="posts__author">Автор: Сергей</span>
-          <span class="posts__likes posts__likes--icon">143</span>
-        </article>
+          <!-- posts-item -->
+          <article class="posts__item">
+            <figure class="posts__image">
+              <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север">
+            </figure>
+            <div class="posts__description">
+              <span class="posts__name">Дорога на север</span>
+              <span class="posts__author">Автор: Петр</span>
+              <span class="posts__likes posts__likes--icon">96</span>
+            </div>
+          </article>
 
-        <!-- posts-item -->
-        <article class="posts__item">
-          <figure class="posts__image">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Дорога на север">
-            <figcaption class="posts__name">Дорога на север</figcaption>
-          </figure>
-          <span class="posts__author">Автор: Петр</span>
-          <span class="posts__likes posts__likes--icon">96</span>
-        </article>
+          <!-- posts-item -->
+          <article class="posts__item">
+            <figure class="posts__image">
+              <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            </figure>
+            <div class="posts__description">
+              <span class="posts__name">Мост дьявола</span>
+              <span class="posts__author">Автор: Антон</span>
+              <span class="posts__likes posts__likes--icon">254</span>
+            </div>
+          </article>
 
-        <!-- posts-item -->
-        <article class="posts__item">
-          <figure class="posts__image">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Мост дьявола">
-            <figcaption class="posts__name">Мост дьявола</figcaption>
-          </figure>
-          <span class="posts__author">Автор: Антон</span>
-          <span class="posts__likes posts__likes--icon">254</span>
-        </article>
         </div>
+        <!-- end posts-row -->
+
       </section>
       <!-- end posts -->
 
@@ -119,22 +131,26 @@
         <!-- player -->
         <div class="player">
           <figure class="player__image">
-            <img src="http://placehold.it/800x500" width="800" height="500" alt="Видео">
+            <img src="img/video-mobile.jpg" width="320" height="201" alt="Видео">
           </figure>
 
           <div class="player__controls">
-            <div class="player__scale">
-              <div class="player__bar"></div>
+            <div class="player__slider">
+              <div class="player__scale">
+                <div class="player__bar"></div>
+              </div>
+            </div>
+            <div class="player__buttons-wrap">
+              <div class="player__buttons player__buttons--left">
+                <button class="btn btn--repeat" type="button">Repeat</button>
+              </div>
+              <div class="player__buttons player__buttons--right">
+                <button class="btn btn--subtitles" type="button">Subtitles</button>
+                <button class="btn btn--fullscreen" type="button">Fullscreen</button>
+              </div>
             </div>
 
-            <div class="player__buttons">
-              <button class="btn btn--repeat">Repeat</button>
-              <button class="btn btn--fullscreen">Fullscreen</button>
-              <button class="btn btn--subtitles">Subtitles</button>
-            </div>
           </div>
-
-
         </div>
 
       </section>

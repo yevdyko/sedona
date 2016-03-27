@@ -72,10 +72,6 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
-
-    &:last-child &__text {
-      padding-bottom: 37px;
-    }
   }
 
   &--icon &__title {
@@ -113,6 +109,10 @@
 
   &--burger::before {
     background-image: url("../img/icon-burger.svg");
+  }
+
+  &--burger &__text {
+    padding-bottom: 40px;
   }
 }
 
