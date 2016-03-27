@@ -7,28 +7,34 @@
 
   &__title {
     margin: 0;
+    padding-top: 40px;
   }
 
   &__description {
     width: 280px;
     margin: $margin-center;
+    padding-top: 35px;
+    padding-bottom: 19px;
+
+    line-height: 24px;
+
+    color: $color-darkgray;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .feedback {
     text-align: center;
 
-    &__header {
-
-    }
-
     &__title {
       margin: 0;
+      padding-top: 77px;
+
+      font-size: 30px;
     }
 
     &__description {
-      width: 280px;
+      width: 450px;
       margin: $margin-center;
     }
   }
@@ -38,17 +44,8 @@
   .feedback {
     text-align: center;
 
-    &__header {
-
-    }
-
     &__title {
       margin: 0;
-    }
-
-    &__description {
-      width: 280px;
-      margin: $margin-center;
     }
   }
 }

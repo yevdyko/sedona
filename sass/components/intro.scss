@@ -8,6 +8,10 @@
     &--photo {
       height: 159px;
     }
+
+    &--form {
+      height: 158px;
+    }
   }
 }
 
@@ -17,9 +21,12 @@
     &__image {
       height: 518px;
 
-      &--photo {
+      &--photo,
+      &--form {
         height: 290px;
       }
+
+
     }
   }
 }
