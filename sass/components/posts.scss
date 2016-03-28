@@ -55,7 +55,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
   }
 
   &__name {
@@ -139,7 +138,7 @@
       height: 80px;
       padding: 0 20px;
 
-      align-content: flex-start;
+      flex-direction: column;
 
       background-color: $color-lightgray;
     }
@@ -167,15 +166,18 @@
     }
 
     &__likes {
-      width: 25%;
-
+      position: relative;
       align-self: flex-end;
 
-      &--icon::before {
-      content: "";
+      padding-top: 28px;
 
-      background: url("../mg/icon-like.svg") no-repeat 50% 50%;
-    }
+      &--icon::before {
+        content: "";
+
+        position: absolute;
+
+        background: url("../img/icon-like.svg") no-repeat 50% 50%;
+      }
     }
   }
 }
@@ -229,19 +231,8 @@
 
       color: $color-white;
       background-color: rgba(0, 0, 0, 0.6);
-    }
 
-    &__name {
-
-    }
-
-    &__author {
-
-    }
-
-    &__likes {
-
+      box-sizing: border-box;
     }
   }
 }
-
