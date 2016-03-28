@@ -1,5 +1,5 @@
 .presentation {
-  padding-bottom: 38px;
+  padding-bottom: 104px;
 
   &__header {
     width: 240px;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .presentation {
     padding-bottom: 40px;
 
