@@ -1,5 +1,4 @@
 .social {
-  @include outlined(black);
 
   &__btn {
     display: inline-block;
@@ -11,18 +10,21 @@
     vertical-align: top;
     text-decoration: none;
 
-    background: #81b3d2;
+    color: $color-white;
+    background: $color-blue;
+    background-repeat: no-repeat;
+    background-position: 50%;
 
     &--tw {
-
+      background-image: url("../img/icon-twitter.svg");
     }
 
     &--fb {
-
+      background-image: url("../img/icon-facebook.svg");
     }
 
     &--yt {
-
+      background-image: url("../img/icon-youtube.svg");
     }
   }
 }
@@ -32,25 +34,11 @@
     display: inline-block;
     width: 33.3%;
 
-    font-size: 14px;
+    font-size: $font-size-base;
     vertical-align: middle;
-
-    @include outlined(black);
 
     &__btn {
       margin: 36px 3px;
-
-      &--tw {
-
-      }
-
-      &--fb {
-
-      }
-
-      &--yt {
-
-      }
     }
   }
 }
@@ -60,24 +48,11 @@
     display: inline-block;
     width: 33.3%;
 
-    font-size: 14px;
+    font-size: $font-size-base;
     vertical-align: middle;
-
-    @include outlined(black);
 
     &__btn {
       margin: 36px 3px;
-      &--tw {
-
-      }
-
-      &--fb {
-
-      }
-
-      &--yt {
-
-      }
     }
   }
 }

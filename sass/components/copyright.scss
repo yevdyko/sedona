@@ -1,25 +1,24 @@
 .copyright {
   padding: 20px 0;
+  padding-bottom: 23px;
   font-size: 0;
   text-align: center;
-
-  @include outlined(black);
 
   &__text {
     display: inline-block;
     margin: 0;
     padding: 0 10px;
 
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+    line-height: 34px;
     vertical-align: middle;
-    text-transform: uppercase;
   }
 
   &__link {
     display: inline-block;
 
-    vertical-align: middle;
+    img {
+      vertical-align: middle;
+    }
   }
 }
 
@@ -27,13 +26,7 @@
   .copyright {
     display: inline-block;
     width: 33.3%;
-    padding: 40px 0;
-
-    font-size: $font-size-base;
-    vertical-align: middle;
-
-    @include outlined(black);
-
+    padding: 43px 0;
   }
 }
 
@@ -41,12 +34,6 @@
   .copyright {
     display: inline-block;
     width: 33.3%;
-    padding: 40px 0;
-
-    font-size: $font-size-base;
-    vertical-align: middle;
-
-    @include outlined(black);
-
+    padding: 43px 0;
   }
 }

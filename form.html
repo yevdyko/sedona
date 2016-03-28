@@ -45,7 +45,7 @@
 
       <!-- begin intro -->
       <div class="intro">
-        <img class="intro__image" src="http://placehold.it/320x160" width="320" height="160" alt="Sedona">
+        <img class="intro__image intro__image--form" src="img/bg-back-mobile.jpg" width="320" height="160" alt="Sedona">
       </div>
       <!-- end intro -->
 
@@ -62,98 +62,108 @@
         <!-- end feedback-header -->
 
         <!-- begin feedback-form -->
-        <form class="feedback-form" action="#" method="post">
+        <form class="feedback-form" action="#" method="POST">
 
           <!-- feedback-form item -->
-          <fieldset class="feedback-form__item">
-            <legend class="feedback-form__title">Представьтесь, пожалуйста:</legend>
+          <fieldset class="feedback-form__item feedback-form__item--name">
+            <legend class="feedback-form__title feedback-form__title--name">Представьтесь<span class="feedback-form__title feedback-form__title--hidden">, пожалуйста</span>:</legend>
 
-            <div class="feedback-form__input">
-              <label for="name">Имя:</label>
+            <div class="feedback-form__input feedback-form__input--name">
+              <label class="feedback-form__label" for="name">Имя:</label>
               <input type="text" id="name" name="name" placeholder="Петр" required>
             </div>
 
-            <div class="feedback-form__input">
-              <label for="surname">Фамилия:</label>
+            <div class="feedback-form__input feedback-form__input--name">
+              <label class="feedback-form__label" for="surname">Фамилия:</label>
               <input type="text" id="surname" name="surname" placeholder="Иванов" required>
             </div>
 
-            <div class="feedback-form__input">
-              <label for="middle-name">Отчество:</label>
+            <div class="feedback-form__input feedback-form__input--name">
+              <label class="feedback-form__label" for="middle-name">Отчество:</label>
               <input type="text" id="middle-name" name="middle-name" placeholder="Александрович" required>
             </div>
           </fieldset>
 
           <!-- feedback-form item -->
-          <fieldset class="feedback-form__item">
-            <legend class="feedback-form__title">Контактная информация:</legend>
+          <fieldset class="feedback-form__item feedback-form__item--contacts">
+            <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
 
-            <div class="feedback-form__input feedback-form__input--icon feedback-form__input--phone">
-              <label for="phone">Контактный телефон:</label>
+            <div class="feedback-form__contacts">
+             <div class="feedback-form__input feedback-form__input--icon">
+              <label class="feedback-form__label feedback-form__label--icon feedback-form__label--phone" for="phone">Контактный телефон:</label>
               <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
             </div>
 
-            <div class="feedback-form__input feedback-form__input--icon feedback-form__input--email">
-              <label class="feedback-form__label" for="email">Электронная почта:</label>
+            <div class="feedback-form__input feedback-form__input--icon">
+              <label class="feedback-form__label feedback-form__label--icon feedback-form__label--email" for="email">Электронная почта:</label>
               <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
+          </div>
+
           </fieldset>
 
           <!-- feedback-form item -->
-          <fieldset class="feedback-form__item">
-            <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+          <fieldset class="feedback-form__item feedback-form__item--rating">
+            <legend class="feedback-form__title feedback-form__title--rating">Ваше общее впечатление:</legend>
 
             <div class="feedback-form__input">
               <input type="radio" id="positive" name="impression" checked>
-              <label for="positive">Скорее положительное</label>
+              <label class="feedback-form__label feedback-form__label--rating" for="positive">Скорее положительное</label>
             </div>
 
             <div class="feedback-form__input">
               <input type="radio" id="negative" name="impression">
-              <label for="negative">Скорее отрицательное</label>
+              <label class="feedback-form__label feedback-form__label--rating" for="negative">Скорее отрицательное</label>
             </div>
 
             <div class="feedback-form__input">
               <input type="radio" id="none" name="impression">
-              <label for="none">Затрудняюсь ответить</label>
+              <label class="feedback-form__label feedback-form__label--rating" for="none">Затрудняюсь ответить</label>
             </div>
+
           </fieldset>
 
           <!-- feedback-form item -->
-          <fieldset class="feedback-form__item">
+          <fieldset class="feedback-form__item feedback-form__item--sights">
             <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
 
-            <div class="feedback-form__input">
-              <input type="checkbox" id="bridge" name="attraction" checked>
-              <label for="bridge">Мост дьявола</label>
+            <div class="feedback-form__checkbox">
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="bridge" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="bridge">Мост Дьявола</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox feedback-form__input--park">
+                <input type="checkbox" id="park" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="park">Слайд-парк</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="mountain" name="attraction">
+                <label class="feedback-form__label feedback-form__label--checkbox" for="mountain">Гора-Колокол</label>
+              </div>
+
+              <div class="feedback-form__input feedback-form__input--checkbox">
+                <input type="checkbox" id="rock" name="attraction" checked>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="rock">Красные скалы</label>
+              </div>
             </div>
 
-            <div class="feedback-form__input">
-              <input type="checkbox" id="park" name="attraction" checked>
-              <label for="park">Слайд-парк</label>
-            </div>
-
-            <div class="feedback-form__input">
-              <input type="checkbox" id="mountain" name="attraction">
-              <label for="mountain">Гора-Колокол</label>
-            </div>
-
-            <div class="feedback-form__input">
-              <input type="checkbox" id="rock" name="attraction" checked>
-              <label for="rock">Красные скалы</label>
-            </div>
           </fieldset>
 
           <!-- feedback-form row item -->
-          <fieldset class="feedback-form__item">
+          <fieldset class="feedback-form__item feedback-form__item--feedback">
             <legend class="feedback-form__title">Опишите свои эмоции:</legend>
 
-            <textarea class="feedback-form__textarea" cols="30" rows="5" name="emotions">
+            <textarea class="feedback-form__textarea" name="emotions">
               Опишите подробно все свои восторги
             </textarea>
-
-            <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
           </fieldset>
+          <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
+          <span class="feedback-form__required">
+            * - обязательные поля
+          </span>
+
 
         </form>
         <!-- end feedback-form -->

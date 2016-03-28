@@ -6,53 +6,32 @@
     padding-top: 40px;
 
     font-size: 21px;
-    line-height: 26px;
+    line-height: $line-height-base;
     vertical-align: middle;
     text-transform: uppercase;
-
-    @include outlined(black);
   }
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
   .footer {
-    min-height: 120px;
-
     font-size: 0;
 
     &__hashtag {
       display: inline-block;
       width: 33.3%;
       padding: 47px 0;
-
-      font-size: 21px;
-      line-height: 26px;
-      vertical-align: middle;
-      text-transform: uppercase;
-
-      @include outlined(black);
     }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .footer {
-    min-height: 120px;
-
     font-size: 0;
-    text-align: center;
 
     &__hashtag {
       display: inline-block;
       width: 33.3%;
-
       padding: 47px 0;
-
-      font-size: 21px;
-      line-height: 26px;
-      text-transform: uppercase;
-
-      @include outlined(black);
     }
   }
 }
