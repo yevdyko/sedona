@@ -3,8 +3,8 @@
   &__title {
     width: 220px;
     margin: $margin-center;
-    padding-top: 60px;
-    padding-bottom: 14px;
+    padding-top: 56px;
+    padding-bottom: 9px;
 
     font-size: 18px;
     line-height: $line-height-base;
@@ -12,7 +12,7 @@
   }
 
   &__number {
-    padding-bottom: 19px;
+    padding-bottom: 15px;
 
     font-size: $font-size-base;
     line-height: 21px;
@@ -22,16 +22,37 @@
   &__text {
     width: 260px;
     margin: $margin-center;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
 
     font-size: $font-size-base;
     line-height: 21px;
     font-weight: $font-weight-normal;
   }
 
+  &__image-wrapper {
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 260px;
+  }
+
   &--blue {
     color: $color-white;
     background-color: $color-blue;
+  }
+
+  &--blue &__title {
+    width: 240px;
+  }
+
+  &--second &__title {
+    padding-top: 39px;
+  }
+
+  &--second &__text {
+    padding-bottom: 39px;
   }
 
   &--gray {
@@ -40,11 +61,12 @@
 
   &--gray &__title {
     padding-top: 28px;
+    padding-bottom: 8px;
   }
 
   &--gray &__text {
     width: 280px;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 
     border-bottom: 1px solid #d6d6d6;
   }
@@ -65,10 +87,10 @@
       top: 25px;
       left: 20px;
 
-      width: 35px;
-      height: 45px;
+      width: 39px;
+      height: 37px;
 
-      background-size: 35px auto;
+      background-size: 37px auto;
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
@@ -76,11 +98,10 @@
 
   &--icon &__title {
     width: 230px;
-    padding-top: 37px;
-    padding-bottom: 18px;
+    padding-bottom: 13px;
     padding-left: 50px;
 
-    font-size: 21px;
+    font-size: 18px;
     line-height: $line-height-base;
     font-weight: $font-weight-bold;
 
@@ -104,73 +125,125 @@
   }
 
   &--gift::before {
+    top: 17px;
+    left: 24px;
+
+    width: 32px;
+    height: 38px;
+
     background-image: url("../img/icon-gift.svg");
+    background-size: 32px auto;
   }
 
   &--burger::before {
+    top: 23px;
+    left: 17px;
+
+    width: 40px;
+    height: 35px;
+
     background-image: url("../img/icon-burger.svg");
   }
 
+  &--house &__title {
+    padding-top: 35px;
+  }
+
+  &--gift &__title {
+    padding-top: 29px;
+  }
+
+  &--burger &__title {
+    padding-top: 29px;
+  }
+
   &--burger &__text {
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .feature {
-    position: relative;
-
-    float: left;
+    align-items: center;
     width: 33.33%;
     min-height: 256px;
 
     &__title {
       width: 160px;
-      padding-top: 40px;
-      padding-bottom: 15px;
+      padding-top: 45px;
+      padding-bottom: 10px;
 
       font-size: 21px;
     }
 
     &__number {
       margin: $margin-center;
-      padding-bottom: 25px;
+      padding-bottom: 23px;
     }
 
     &__text {
       width: 165px;
       padding-bottom: 40px;
-
-      &:nth-child(3) {
-        width: 180px;
-      }
     }
 
-    &--gray &__text {
-      border: none;
+    &__image-wrapper {
+      display: block;
+      justify-content: center;
+      overflow: hidden;
+
+      width: 66.66%;
+      margin: 0;
+    }
+
+    &__image {
+      display: block;
+      height: 256px;
     }
 
     &--icon::before {
-      top: 43px;
       left: 50%;
-
-      width: 75px;
-      height: 90px;
 
       vertical-align: bottom;
 
-      background-size: 75px auto;
       background-position: 50% 100%;
 
       transform: translateX(-50%);
     }
 
+    &--house::before {
+      top: 58px;
+
+      width: 75px;
+      height: 73px;
+
+      background-size: 73px auto;
+    }
+
+    &--gift::before {
+      top: 57px;
+
+      width: 64px;
+      height: 76px;
+
+      background-size: 64px auto;
+    }
+
+    &--burger::before {
+      top: 60px;
+
+      width: 77px;
+      height: 70px;
+
+      background-size: 77px auto;
+    }
+
     &--icon &__title {
       margin: $margin-center;
       padding: 0;
-      padding-top: 161px;
-      padding-bottom: 26px;
+      padding-top: 159px;
+      padding-bottom: 21px;
 
+      font-size: 21px;
       text-align: center;
     }
 
@@ -178,7 +251,7 @@
       width: 170px;
       margin: $margin-center;
       padding: 0;
-      padding-bottom: 54px;
+      padding-bottom: 60px;
 
       text-align: center;
     }
@@ -186,27 +259,43 @@
     &--gift {
       order: 1;
     }
+
+    &--blue &__title {
+      width: 200px;
+    }
+
+    &--gray &__title {
+      padding-top: 46px;
+      padding-bottom: 10px;
+
+      border: none;
+    }
+
+    &--gray &__number {
+      padding-bottom: 21px;
+    }
+
+    &--gray &__text {
+      width: 180px;
+
+      border: none;
+    }
+
+    &--fourth &__text {
+      width: 150px;
+    }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .feature {
-    position: relative;
-
-    width: 33.33%;
-    min-height: 256px;
 
     &__title {
-      width: 160px;
-      padding-top: 40px;
-      padding-bottom: 15px;
-
-      font-size: 21px;
+      padding-top: 52px;
     }
 
     &__number {
-      margin: $margin-center;
-      padding-bottom: 25px;
+      padding-bottom: 21px;
     }
 
     &__text {
@@ -214,50 +303,33 @@
       padding-bottom: 40px;
     }
 
+
+
     &--blue &__text {
       width: 260px;
     }
 
-    &--gray &__text {
-      border: none;
+    &--gray &__title {
+      padding-top: 45px;
     }
 
-    &--icon::before {
-      top: 43px;
-      left: 50%;
-
-      width: 75px;
-      height: 90px;
-
-      vertical-align: bottom;
-
-      background-size: 75px auto;
-      background-position: 50% 100%;
-
-      transform: translateX(-50%);
+    &--gray &__text {
+      width: 270px;
     }
 
     &--icon &__title {
       width: 170px;
       margin: $margin-center;
       padding: 0;
-      padding-top: 161px;
-      padding-bottom: 26px;
+      padding-top: 160px;
+      padding-bottom: 20px;
 
       text-align: center;
     }
 
     &--icon &__text {
       width: 285px;
-      margin: $margin-center;
-      padding: 0;
-      padding-bottom: 54px;
-
-      text-align: center;
-    }
-
-    &--gift {
-      order: 1;
+      padding-bottom: 82px;
     }
 
     &--gift &__text {

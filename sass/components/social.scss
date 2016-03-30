@@ -4,7 +4,7 @@
     display: inline-block;
     width: 46px;
     height: 48px;
-    margin: 20px 3px;
+    margin: 15px 2px;
 
     font-size: 0;
     vertical-align: top;
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .social {
     display: inline-block;
     width: 33.3%;
@@ -38,21 +38,7 @@
     vertical-align: middle;
 
     &__btn {
-      margin: 36px 3px;
-    }
-  }
-}
-
-@media (min-width: $screen-lg-min) {
-  .social {
-    display: inline-block;
-    width: 33.3%;
-
-    font-size: $font-size-base;
-    vertical-align: middle;
-
-    &__btn {
-      margin: 36px 3px;
+      margin: 36px 1px;
     }
   }
 }

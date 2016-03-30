@@ -3,8 +3,6 @@
 
   &__header {
     position: relative;
-
-    margin: $margin-center;
   }
 
   &__header::before,
@@ -53,8 +51,8 @@
   &__title {
     width: 270px;
     margin: $margin-center;
-    padding-top: 42px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 26px;
 
     font-size: 18px;
     line-height: $line-height-base;
@@ -72,7 +70,7 @@
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .features {
 
     &__header::after {
@@ -81,8 +79,8 @@
 
     &__title {
       width: 500px;
-      padding-top: 52px;
-      padding-bottom: 34px;
+      padding-top: 51px;
+      padding-bottom: 28px;
 
       font-size: 21px;
 
@@ -91,18 +89,16 @@
 
     &__description {
       width: 500px;
-      margin: $margin-center;
-      padding-bottom: 52px;
+      padding-bottom: 50px;
 
       text-align: center;
     }
 
     &__row {
       display: flex;
-      flex-direction: row;
 
-      &:nth-of-type(3) .feature-image {
-        order: -1;
+      &--third .feature--second {
+        order: 1;
       }
     }
   }
@@ -116,21 +112,11 @@
     }
 
     &__title {
-      width: 500px;
-      padding-top: 52px;
-      padding-bottom: 34px;
-
-      font-size: 21px;
-
-      text-align: center;
+      padding-top: 49px;
     }
 
     &__description {
-      width: 500px;
-      margin: $margin-center;
-      padding-bottom: 52px;
-
-      text-align: center;
+      padding-bottom: 50px;
     }
 
     &__row {
