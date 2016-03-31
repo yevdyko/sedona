@@ -80,20 +80,7 @@
     width: 320px;
     margin: $margin-center;
 
-    &::before {
-      content: "";
-
-      position: absolute;
-      top: 25px;
-      left: 20px;
-
-      width: 39px;
-      height: 37px;
-
-      background-size: 37px auto;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
+    fill: $color-blue;
   }
 
   &--icon &__title {
@@ -120,29 +107,31 @@
     text-align: left;
   }
 
-  &--house::before {
-    background-image: url("../img/icon-house.svg");
+  &--house &__icon {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+
+    width: 39px;
+    height: 37px;
   }
 
-  &--gift::before {
+  &--gift &__icon {
+    position: absolute;
     top: 17px;
     left: 24px;
 
     width: 32px;
     height: 38px;
-
-    background-image: url("../img/icon-gift.svg");
-    background-size: 32px auto;
   }
 
-  &--burger::before {
+  &--burger &__icon {
+    position: absolute;
     top: 23px;
     left: 17px;
 
     width: 40px;
     height: 35px;
-
-    background-image: url("../img/icon-burger.svg");
   }
 
   &--house &__title {
@@ -200,41 +189,33 @@
       height: 256px;
     }
 
-    &--icon::before {
+    &--icon &__icon {
+      position: absolute;
       left: 50%;
-
-      vertical-align: bottom;
-
-      background-position: 50% 100%;
 
       transform: translateX(-50%);
     }
 
-    &--house::before {
+    &--house &__icon {
       top: 58px;
 
       width: 75px;
       height: 73px;
-
-      background-size: 73px auto;
     }
 
-    &--gift::before {
+
+    &--gift &__icon {
       top: 57px;
 
       width: 64px;
       height: 76px;
-
-      background-size: 64px auto;
     }
 
-    &--burger::before {
+    &--burger &__icon {
       top: 60px;
 
       width: 77px;
       height: 70px;
-
-      background-size: 77px auto;
     }
 
     &--icon &__title {
@@ -303,8 +284,6 @@
       padding-bottom: 40px;
     }
 
-
-
     &--blue &__text {
       width: 260px;
     }
@@ -335,5 +314,14 @@
     &--gift &__text {
       width: 220px;
     }
+
+    &--second &__title {
+      padding-top: 54px;
+    }
+
+    &--second &__text {
+      width: 220px;
+    }
+
   }
 }

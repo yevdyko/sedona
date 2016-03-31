@@ -1,6 +1,7 @@
 .social {
 
   &__btn {
+    position: relative;
     display: inline-block;
     width: 46px;
     height: 48px;
@@ -10,21 +11,27 @@
     vertical-align: top;
     text-decoration: none;
 
-    color: $color-white;
+    fill: $color-white;
     background: $color-blue;
-    background-repeat: no-repeat;
-    background-position: 50%;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
 
     &--tw {
-      background-image: url("../img/icon-twitter.svg");
+      @include size(18px, 14px);
     }
 
     &--fb {
-      background-image: url("../img/icon-facebook.svg");
+      @include size(9px, 18px);
     }
 
     &--yt {
-      background-image: url("../img/icon-youtube.svg");
+      @include size(20px, 14px);
     }
   }
 }
@@ -34,7 +41,6 @@
     display: inline-block;
     width: 33.3%;
 
-    font-size: $font-size-base;
     vertical-align: middle;
 
     &__btn {
