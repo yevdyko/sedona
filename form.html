@@ -16,7 +16,11 @@
 
         <!-- begin logo -->
         <div class="logo">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Sedona">
+          </picture>
         </div>
         <!-- end logo -->
 
@@ -155,15 +159,16 @@
           <fieldset class="feedback-form__item feedback-form__item--feedback">
             <legend class="feedback-form__title">Опишите свои эмоции:</legend>
 
-            <textarea class="feedback-form__textarea" name="emotions">
-              Опишите подробно все свои восторги
-            </textarea>
+            <textarea class="feedback-form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
-          <span class="feedback-form__required">
-            * - обязательные поля
-          </span>
 
+          <!-- feedback-form button -->
+          <div class="feedback-form__button">
+            <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
+            <span class="feedback-form__required">
+              * - обязательные поля
+            </span>
+          </div>
 
         </form>
         <!-- end feedback-form -->
