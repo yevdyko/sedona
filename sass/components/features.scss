@@ -73,8 +73,26 @@
 @media (min-width: $screen-sm-min) {
   .features {
 
+    &__header::before {
+      top: -38px;
+      height: 38px;
+    }
+
     &__header::after {
-      display: none;
+      top: -57px;
+      left: 50%;
+
+      width: 700px;
+      height: 57px;
+
+      background-image: linear-gradient(to top right,
+                                        #ffffff 50%,
+                                        transparent 50%),
+                        linear-gradient(to top left,
+                                        #ffffff 50%,
+                                        transparent 50%);
+
+      transform: translate(-50%);
     }
 
     &__title {
@@ -107,8 +125,13 @@
 @media (min-width: $screen-lg-min) {
   .features {
 
+    &__header::before {
+      top: -59px;
+      height: 59px;
+    }
+
     &__header::after {
-      display: none;
+
     }
 
     &__title {
