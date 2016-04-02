@@ -5,12 +5,3 @@
     clear: both;
   }
 }
-
-@mixin outlined($color: blue) {
-  outline: 1px solid $color;
-}
-
-@mixin size($width, $height) {
-  width: $width;
-  height: $height;
-}
