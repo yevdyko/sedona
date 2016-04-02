@@ -5,41 +5,20 @@
     position: relative;
   }
 
-  &__header::before,
-  &__header:after {
+  &__header::after {
     content: "";
 
     position: absolute;
-
+    bottom: -16px;
     left: 0;
-    z-index: 10;
 
     display: block;
     width: 100%;
+    height: 16px;
 
     background-size: 50.1% 100%;
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
-  }
-
-  &__header::before {
-    top: -26px;
-
-    height: 26px;
-
-    background-image: linear-gradient(to top right,
-                                      #ffffff 50%,
-                                      transparent 50%),
-                      linear-gradient(to top left,
-                                      #ffffff 50%,
-                                      transparent 50%);
-  }
-
-  &__header::after {
-    bottom: -16px;
-
-    height: 16px;
-
     background-image: linear-gradient(to top right,
                                       transparent 50%,
                                       #ffffff 50%),
@@ -73,26 +52,8 @@
 @media (min-width: $screen-sm-min) {
   .features {
 
-    &__header::before {
-      top: -38px;
-      height: 38px;
-    }
-
     &__header::after {
-      top: -57px;
-      left: 50%;
-
-      width: 700px;
-      height: 57px;
-
-      background-image: linear-gradient(to top right,
-                                        #ffffff 50%,
-                                        transparent 50%),
-                        linear-gradient(to top left,
-                                        #ffffff 50%,
-                                        transparent 50%);
-
-      transform: translate(-50%);
+      display: none;
     }
 
     &__title {
@@ -124,15 +85,6 @@
 
 @media (min-width: $screen-lg-min) {
   .features {
-
-    &__header::before {
-      top: -59px;
-      height: 59px;
-    }
-
-    &__header::after {
-
-    }
 
     &__title {
       padding-top: 49px;
