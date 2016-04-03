@@ -1,11 +1,14 @@
 .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 24px 0;
   padding-bottom: 23px;
-  font-size: 0;
+
   text-align: center;
 
   &__text {
-    display: inline-block;
     margin: 0;
     padding-left: 5px;
     padding-right: 5px;
@@ -16,14 +19,14 @@
 
   &__link {
     position: relative;
-    display: inline-block;
 
-    fill: $color-black
+    fill: $color-black;
   }
 
   &__image {
     position: absolute;
-    @include size(42px, 42px);
+    width: 42px;
+    height: 42px;
 
     transform: translateY(-50%);
   }
@@ -31,8 +34,8 @@
 
 @media (min-width: $screen-sm-min) {
   .copyright {
-    display: inline-block;
-    width: 33.3%;
+    align-items: flex-start;
+
     padding: 43px 0;
 
     &__text {
@@ -43,8 +46,6 @@
 
 @media (min-width: $screen-lg-min) {
   .copyright {
-    display: inline-block;
-    width: 33.3%;
     padding: 43px 0;
   }
 }
