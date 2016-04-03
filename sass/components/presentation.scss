@@ -34,7 +34,7 @@
 
     &__title {
       margin: 0;
-      padding-top: 73px;
+      padding-top: 66px;
 
       font-size: 30px;
       line-height: $line-height-base;
@@ -42,7 +42,7 @@
 
     &__text {
       margin: 0;
-      padding-top: 35px;
+      padding-top: 30px;
       padding-bottom: 73px;
 
       font-size: $font-size-base;
@@ -55,26 +55,8 @@
   .presentation {
     padding-bottom: 85px;
 
-    &__header {
-      width: 430px;
-      margin: $margin-center;
-    }
-
     &__title {
-      margin: 0;
-      padding-top: 73px;
-
-      font-size: 30px;
-      line-height: $line-height-base;
-    }
-
-    &__text {
-      margin: 0;
-      padding-top: 35px;
-      padding-bottom: 73px;
-
-      font-size: $font-size-base;
-      line-height: 24px;
+      padding-top: 70px;
     }
   }
 }

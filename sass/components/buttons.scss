@@ -1,4 +1,6 @@
 .btn {
+  position: relative;
+
   display: block;
 
   font-size: 21px;
@@ -19,22 +21,21 @@
     padding: 16px 0;
   }
 
-  &--repeat {
-    width: 16px;
-    height: 20px;
+  &--replay {
+
     margin: auto;
 
     font-size: 0;
-    background: url("../img/icon-video-replay.svg") no-repeat;
+    background: transparent;
   }
 
   &--subtitles {
-    width: 32px;
-    height: 20px;
+
     margin: auto;
 
     font-size: 0;
-    background: url("../img/icon-video-subtitles.svg") no-repeat;
+
+    background: transparent;
   }
 
   &--fullscreen {
@@ -43,7 +44,8 @@
     margin: 23px;
 
     font-size: 0;
-    background: url("../img/icon-video-fullscreen.svg") no-repeat;
+
+    background: transparent;
   }
 
   &--feedback {
