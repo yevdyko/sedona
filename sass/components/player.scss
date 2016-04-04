@@ -133,6 +133,18 @@
       width: 20px;
       height: 20px;
     }
+
+    &:hover {
+      fill: $color-darkgray;
+
+      background-color: transparent;
+    }
+
+    &:active {
+      fill: #c1c1c1;
+
+      background-color: transparent;
+    }
   }
 }
 

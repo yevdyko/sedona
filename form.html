@@ -17,7 +17,7 @@
         <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
       </symbol>
       <symbol id="icon-twitter" viewBox="0 0 17.5 14.663">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+        <path d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
       </symbol>
       <symbol id="icon-facebook" viewBox="0 0 8.672 18.944">
         <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787C5.765,5.069,5.75,3.709,6.275,3.356z"/>
@@ -120,14 +120,15 @@
             <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
 
             <div class="feedback-form__contacts">
-             <div class="feedback-form__input feedback-form__input--icon">
-              <label class="feedback-form__label feedback-form__label--icon feedback-form__label--phone" for="phone">Контактный телефон:</label>
+             <div class="feedback-form__input feedback-form__input--icon feedback-form__input--phone">
+              <label class="feedback-form__label feedback-form__label--contacts" for="phone"><span class="feedback-form__label--hidden">Контактный </span>телефон:</label>
               <svg class="feedback-form__icon feedback-form__icon--phone"><use xlink:href="#icon-phone"/></svg>
               <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+              <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
             </div>
 
             <div class="feedback-form__input feedback-form__input--icon">
-              <label class="feedback-form__label feedback-form__label--icon" for="email">Электронная почта:</label>
+              <label class="feedback-form__label feedback-form__label--contacts" for="email">Электронная почта:</label>
               <svg class="feedback-form__icon feedback-form__icon--mail"><use xlink:href="#icon-mail"/></svg>
               <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
@@ -139,17 +140,17 @@
           <fieldset class="feedback-form__item feedback-form__item--rating">
             <legend class="feedback-form__title feedback-form__title--rating">Ваше общее впечатление:</legend>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="positive" name="impression" checked>
               <label class="feedback-form__label feedback-form__label--rating" for="positive">Скорее положительное</label>
             </div>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="negative" name="impression">
               <label class="feedback-form__label feedback-form__label--rating" for="negative">Скорее отрицательное</label>
             </div>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="none" name="impression">
               <label class="feedback-form__label feedback-form__label--rating" for="none">Затрудняюсь ответить</label>
             </div>
@@ -158,7 +159,7 @@
 
           <!-- feedback-form item -->
           <fieldset class="feedback-form__item feedback-form__item--sights">
-            <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__title feedback-form__title--sights">Посещенные достопримечательности:</legend>
 
             <div class="feedback-form__checkbox">
               <div class="feedback-form__input feedback-form__input--checkbox">
@@ -186,7 +187,7 @@
 
           <!-- feedback-form row item -->
           <fieldset class="feedback-form__item feedback-form__item--feedback">
-            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__title feedback-form__title--feedback">Опишите свои эмоции:</legend>
 
             <textarea class="feedback-form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>

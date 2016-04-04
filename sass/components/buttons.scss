@@ -10,9 +10,39 @@
   text-decoration: none;
 
   color: $color-white;
-  background: $color-blue;
+  background-color: $color-blue;
 
   border: none;
+
+  outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #88b6d1;
+
+    background-color: #5496bd;
+  }
+
+  &--icon {
+    margin: auto;
+
+    font-size: 0;
+
+    background: transparent;
+  }
+
+  &--icon:hover {
+    background-color: transparent;
+  }
+
+  &--icon:active {
+    color: transparent;
+
+    background-color: transparent;
+  }
 
   &--search {
     width: 280px;
@@ -21,31 +51,10 @@
     padding: 16px 0;
   }
 
-  &--replay {
-
-    margin: auto;
-
-    font-size: 0;
-    background: transparent;
-  }
-
-  &--subtitles {
-
-    margin: auto;
-
-    font-size: 0;
-
-    background: transparent;
-  }
-
   &--fullscreen {
     width: 20px;
     height: 20px;
     margin: 23px;
-
-    font-size: 0;
-
-    background: transparent;
   }
 
   &--feedback {

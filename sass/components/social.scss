@@ -14,7 +14,17 @@
     text-decoration: none;
 
     fill: $color-white;
+
     background: $color-blue;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      fill: #88b6d1;
+      background-color: #5496bd;
+    }
   }
 
   &__icon {
