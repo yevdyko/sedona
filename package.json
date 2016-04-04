@@ -14,17 +14,23 @@
   "homepage": "https://github.com/htmlacademy-adaptive/157971-sedona",
   "devDependencies": {
     "autoprefixer": "6.3.3",
-    "editorconfig-tools": "0.1.1",
+    "css-mqpacker": "4.0.1",
     "grunt": "0.4.5",
     "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-imagemin": "1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
     "grunt-contrib-watch": "0.6.1",
+    "grunt-csso": "0.8.2",
     "grunt-postcss": "0.7.2",
     "grunt-sass": "1.1.0",
+    "grunt-svgmin": "3.1.2",
+    "grunt-svgstore": "1.0.0",
     "load-grunt-tasks": "3.4.1"
   },
   "scripts": {
-    "test": "editorconfig-tools check *",
-    "build": "grunt sass && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "engines": {
