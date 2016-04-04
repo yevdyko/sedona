@@ -3,45 +3,22 @@
 
   &__header {
     position: relative;
-
-    margin: $margin-center;
   }
 
-  &__header::before,
-  &__header:after {
+  &__header::after {
     content: "";
 
     position: absolute;
-
+    bottom: -16px;
     left: 0;
-    z-index: 10;
 
     display: block;
     width: 100%;
+    height: 16px;
 
     background-size: 50.1% 100%;
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
-  }
-
-  &__header::before {
-    top: -26px;
-
-    height: 26px;
-
-    background-image: linear-gradient(to top right,
-                                      #ffffff 50%,
-                                      transparent 50%),
-                      linear-gradient(to top left,
-                                      #ffffff 50%,
-                                      transparent 50%);
-  }
-
-  &__header::after {
-    bottom: -16px;
-
-    height: 16px;
-
     background-image: linear-gradient(to top right,
                                       transparent 50%,
                                       #ffffff 50%),
@@ -53,8 +30,8 @@
   &__title {
     width: 270px;
     margin: $margin-center;
-    padding-top: 42px;
-    padding-bottom: 32px;
+    padding-top: 40px;
+    padding-bottom: 26px;
 
     font-size: 18px;
     line-height: $line-height-base;
@@ -72,7 +49,7 @@
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .features {
 
     &__header::after {
@@ -81,8 +58,8 @@
 
     &__title {
       width: 500px;
-      padding-top: 52px;
-      padding-bottom: 34px;
+      padding-top: 51px;
+      padding-bottom: 28px;
 
       font-size: 21px;
 
@@ -91,18 +68,16 @@
 
     &__description {
       width: 500px;
-      margin: $margin-center;
-      padding-bottom: 52px;
+      padding-bottom: 50px;
 
       text-align: center;
     }
 
     &__row {
       display: flex;
-      flex-direction: row;
 
-      &:nth-of-type(3) .feature-image {
-        order: -1;
+      &--third .feature--second {
+        order: 1;
       }
     }
   }
@@ -111,26 +86,12 @@
 @media (min-width: $screen-lg-min) {
   .features {
 
-    &__header::after {
-      display: none;
-    }
-
     &__title {
-      width: 500px;
-      padding-top: 52px;
-      padding-bottom: 34px;
-
-      font-size: 21px;
-
-      text-align: center;
+      padding-top: 49px;
     }
 
     &__description {
-      width: 500px;
-      margin: $margin-center;
-      padding-bottom: 52px;
-
-      text-align: center;
+      padding-bottom: 50px;
     }
 
     &__row {

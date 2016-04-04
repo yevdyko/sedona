@@ -1,24 +1,26 @@
 .footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   &__hashtag {
     padding: 20px 0;
-    padding-top: 40px;
+    padding-top: 36px;
 
     font-size: 21px;
     line-height: $line-height-base;
-    vertical-align: middle;
     text-transform: uppercase;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .footer {
-    font-size: 0;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin: 0;
 
     &__hashtag {
-      display: inline-block;
-      width: 33.3%;
       padding: 47px 0;
     }
   }
@@ -26,12 +28,6 @@
 
 @media (min-width: $screen-lg-min) {
   .footer {
-    font-size: 0;
-
-    &__hashtag {
-      display: inline-block;
-      width: 33.3%;
-      padding: 47px 0;
-    }
+    /*justify-content: space-between;*/
   }
 }

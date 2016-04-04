@@ -8,6 +8,29 @@
   </head>
   <body>
 
+    <!-- begin icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="icon-phone" viewBox="0 0 18 18">
+        <path d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 16 16">
+        <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 17.5 14.663">
+        <path d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 8.672 18.944">
+        <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+      </symbol>
+      <symbol id="icon-youtube" viewBox="0 0 19.979 14.015">
+        <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+      </symbol>
+      <symbol id="icon-htmlacademy" viewBox="0 0 60 60">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </symbol>
+    </svg>
+    <!-- end icons -->
+
     <!-- begin wrapper -->
     <div class="wrapper">
 
@@ -16,7 +39,15 @@
 
         <!-- begin logo -->
         <div class="logo">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Sedona">
+          <picture>
+            <source media="(min-width: 1200px)"
+                    srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)"
+                    srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image"
+                 src="img/logo-sedona-mobile.svg"
+                 alt="Sedona">
+          </picture>
         </div>
         <!-- end logo -->
 
@@ -44,8 +75,8 @@
       <!-- end header -->
 
       <!-- begin intro -->
-      <div class="intro">
-        <img class="intro__image intro__image--form" src="img/bg-back-mobile.jpg" width="320" height="160" alt="Sedona">
+      <div class="intro intro--small">
+        <img class="intro__image intro__image--small" src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona">
       </div>
       <!-- end intro -->
 
@@ -89,13 +120,16 @@
             <legend class="feedback-form__title feedback-form__title--contacts">Контактная информация:</legend>
 
             <div class="feedback-form__contacts">
-             <div class="feedback-form__input feedback-form__input--icon">
-              <label class="feedback-form__label feedback-form__label--icon feedback-form__label--phone" for="phone">Контактный телефон:</label>
+             <div class="feedback-form__input feedback-form__input--icon feedback-form__input--phone">
+              <label class="feedback-form__label feedback-form__label--contacts" for="phone"><span class="feedback-form__label--hidden">Контактный </span>телефон:</label>
+              <svg class="feedback-form__icon feedback-form__icon--phone"><use xlink:href="#icon-phone"/></svg>
               <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+              <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
             </div>
 
             <div class="feedback-form__input feedback-form__input--icon">
-              <label class="feedback-form__label feedback-form__label--icon feedback-form__label--email" for="email">Электронная почта:</label>
+              <label class="feedback-form__label feedback-form__label--contacts" for="email">Электронная почта:</label>
+              <svg class="feedback-form__icon feedback-form__icon--mail"><use xlink:href="#icon-mail"/></svg>
               <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </div>
           </div>
@@ -106,17 +140,17 @@
           <fieldset class="feedback-form__item feedback-form__item--rating">
             <legend class="feedback-form__title feedback-form__title--rating">Ваше общее впечатление:</legend>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="positive" name="impression" checked>
               <label class="feedback-form__label feedback-form__label--rating" for="positive">Скорее положительное</label>
             </div>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="negative" name="impression">
               <label class="feedback-form__label feedback-form__label--rating" for="negative">Скорее отрицательное</label>
             </div>
 
-            <div class="feedback-form__input">
+            <div class="feedback-form__input feedback-form__input--rating">
               <input type="radio" id="none" name="impression">
               <label class="feedback-form__label feedback-form__label--rating" for="none">Затрудняюсь ответить</label>
             </div>
@@ -125,7 +159,7 @@
 
           <!-- feedback-form item -->
           <fieldset class="feedback-form__item feedback-form__item--sights">
-            <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__title feedback-form__title--sights">Посещенные достопримечательности:</legend>
 
             <div class="feedback-form__checkbox">
               <div class="feedback-form__input feedback-form__input--checkbox">
@@ -153,17 +187,18 @@
 
           <!-- feedback-form row item -->
           <fieldset class="feedback-form__item feedback-form__item--feedback">
-            <legend class="feedback-form__title">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__title feedback-form__title--feedback">Опишите свои эмоции:</legend>
 
-            <textarea class="feedback-form__textarea" name="emotions">
-              Опишите подробно все свои восторги
-            </textarea>
+            <textarea class="feedback-form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
-          <span class="feedback-form__required">
-            * - обязательные поля
-          </span>
 
+          <!-- feedback-form button -->
+          <div class="feedback-form__button">
+            <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
+            <span class="feedback-form__required">
+              * - обязательные поля
+            </span>
+          </div>
 
         </form>
         <!-- end feedback-form -->
@@ -179,9 +214,15 @@
 
         <!-- social  -->
         <div class="social">
-          <a href="#" class="social__btn social__btn--tw">Twitter</a>
-          <a href="#" class="social__btn social__btn--fb">Facebook</a>
-          <a href="#" class="social__btn social__btn--yt">Youtube</a>
+          <a href="#" class="social__btn">
+            <svg class="social__icon social__icon--tw"><use xlink:href="#icon-twitter"/>Twitter</svg>
+          </a>
+          <a href="#" class="social__btn">
+            <svg class="social__icon social__icon--fb"><use xlink:href="#icon-facebook"/>Facebook</svg>
+          </a>
+          <a href="#" class="social__btn">
+            <svg class="social__icon social__icon--yt"><use xlink:href="#icon-youtube"/>Youtube</svg>
+          </a>
         </div>
 
         <!-- copyright -->

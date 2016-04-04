@@ -5,13 +5,15 @@
 
   transform: translate(-50%, 0);
 
+  z-index: 1;
+
   &__image {
     width: 102px;
     height: 84px;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .logo {
     top: 0;
   }
@@ -19,6 +21,10 @@
 
 @media (min-width: $screen-lg-min) {
   .logo {
-    top: 0;
+
+    &__image {
+      width: 187px;
+      height: 96px;
+    }
   }
 }

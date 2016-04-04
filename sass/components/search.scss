@@ -4,7 +4,7 @@
   &__title {
     margin: 0;
     padding-top: 29px;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
 
     font-size: 21px;
     line-height: $line-height-base;
@@ -24,15 +24,15 @@
   &__map {
     min-height: 350px;
 
-    background: url("../img/bg-map-mobile.jpg");
+    background: url("../img/bg-map-mobile.jpg") no-repeat;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .search {
 
     &__title {
-      padding-top: 50px;
+      padding-top: 56px;
       padding-bottom: 31px;
 
       font-size: 30px;
@@ -40,7 +40,11 @@
 
     &__text {
       width: 450px;
-      padding-bottom: 44px;
+      padding-bottom: 42px;
+    }
+
+    &__map {
+      background: url("../img/bg-map-tablet.jpg") no-repeat;
     }
   }
 }
@@ -49,15 +53,17 @@
   .search {
 
     &__title {
-      padding-top: 60px;
-      padding-bottom: 35px;
-
-      font-size: 30px;
+      padding-top: 55px;
+      padding-bottom: 30px;
     }
 
     &__text {
       width: 400px;
       padding-bottom: 49px;
+    }
+
+    &__map {
+      background: url("../img/bg-map-desktop.jpg") no-repeat;
     }
   }
 }

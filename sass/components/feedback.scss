@@ -7,7 +7,7 @@
 
   &__title {
     margin: 0;
-    padding-top: 40px;
+    padding-top: 39px;
 
     text-align: center;
   }
@@ -15,8 +15,8 @@
   &__description {
     width: 280px;
     margin: $margin-center;
-    padding-top: 35px;
-    padding-bottom: 19px;
+    padding-top: 26px;
+    padding-bottom: 17px;
 
     line-height: 24px;
 
@@ -48,6 +48,12 @@
 
     &__title {
       margin: 0;
+      padding-top: 111px;
+    }
+
+    &__description {
+      padding-top: 31px;
+      padding-bottom: 39px;
     }
   }
 }

@@ -1,4 +1,6 @@
 .btn {
+  position: relative;
+
   display: block;
 
   font-size: 21px;
@@ -8,9 +10,39 @@
   text-decoration: none;
 
   color: $color-white;
-  background: $color-blue;
+  background-color: $color-blue;
 
   border: none;
+
+  outline: none;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #88b6d1;
+
+    background-color: #5496bd;
+  }
+
+  &--icon {
+    margin: auto;
+
+    font-size: 0;
+
+    background: transparent;
+  }
+
+  &--icon:hover {
+    background-color: transparent;
+  }
+
+  &--icon:active {
+    color: transparent;
+
+    background-color: transparent;
+  }
 
   &--search {
     width: 280px;
@@ -19,38 +51,15 @@
     padding: 16px 0;
   }
 
-  &--repeat {
-    width: 16px;
-    height: 20px;
-    margin: auto;
-
-    font-size: 0;
-    background: url("../img/icon-video-replay.svg") no-repeat;
-  }
-
-  &--subtitles {
-    width: 32px;
-    height: 20px;
-    margin: auto;
-
-    font-size: 0;
-    background: url("../img/icon-video-subtitles.svg") no-repeat;
-  }
-
   &--fullscreen {
     width: 20px;
     height: 20px;
     margin: 23px;
-
-    font-size: 0;
-    background: url("../img/icon-video-fullscreen.svg") no-repeat;
   }
 
   &--feedback {
     width: 100%;
     margin: $margin-center;
-    margin-top: 51px;
-    margin-bottom: 33px;
     padding: 16px 0;
   }
 }
@@ -70,8 +79,6 @@
     &--feedback {
       width: 50%;
       margin: 0;
-      margin-top: 51px;
-      margin-bottom: 65px;
     }
   }
 }
