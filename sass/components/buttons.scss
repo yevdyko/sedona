@@ -26,6 +26,12 @@
     background-color: #5496bd;
   }
 
+  &--blue {
+    width: 270px;
+    margin: $margin-center;
+    padding: 16px 0;
+  }
+
   &--icon {
     margin: auto;
 
@@ -62,6 +68,10 @@
     margin: $margin-center;
     padding: 16px 0;
   }
+
+  &--failure {
+    width: 180px;
+  }
 }
 
 @media (min-width: $screen-sm-min) {
@@ -79,6 +89,10 @@
     &--feedback {
       width: 50%;
       margin: 0;
+    }
+
+    &--success {
+      width: 100%;
     }
   }
 }

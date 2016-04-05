@@ -105,17 +105,17 @@
 
             <div class="feedback-form__input feedback-form__input--name">
               <label class="feedback-form__label" for="name">Имя:</label>
-              <input type="text" id="name" name="name" placeholder="Петр" required>
+              <input type="text" id="name" name="name" placeholder="Петр">
             </div>
 
             <div class="feedback-form__input feedback-form__input--name">
               <label class="feedback-form__label" for="surname">Фамилия:</label>
-              <input type="text" id="surname" name="surname" placeholder="Иванов" required>
+              <input type="text" id="surname" name="surname" placeholder="Иванов">
             </div>
 
             <div class="feedback-form__input feedback-form__input--name">
               <label class="feedback-form__label" for="middle-name">Отчество:</label>
-              <input type="text" id="middle-name" name="middle-name" placeholder="Александрович" required>
+              <input type="text" id="middle-name" name="middle-name" placeholder="Александрович">
             </div>
           </fieldset>
 
@@ -127,14 +127,14 @@
              <div class="feedback-form__input feedback-form__input--icon feedback-form__input--phone">
               <label class="feedback-form__label feedback-form__label--contacts" for="phone"><span class="feedback-form__label--hidden">Контактный </span>телефон:</label>
               <svg class="feedback-form__icon feedback-form__icon--phone"><use xlink:href="#icon-phone"/></svg>
-              <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+              <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
               <span class="feedback-form__error">Ошибка, перепроверьте номер</span>
             </div>
 
             <div class="feedback-form__input feedback-form__input--icon">
               <label class="feedback-form__label feedback-form__label--contacts" for="email">Электронная почта:</label>
               <svg class="feedback-form__icon feedback-form__icon--mail"><use xlink:href="#icon-mail"/></svg>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <input type="email" id="email" name="email" placeholder="Введите e-mail">
             </div>
           </div>
 
@@ -198,7 +198,7 @@
 
           <!-- feedback-form button -->
           <div class="feedback-form__button">
-            <button class="btn btn--feedback" type="submit">Отправить отзыв</button>
+            <button class="btn btn--feedback" type="button">Отправить отзыв</button>
             <span class="feedback-form__required">
               * - обязательные поля
             </span>
@@ -219,7 +219,7 @@
         <!-- social  -->
         <div class="social">
           <a href="#" class="social__btn">
-            <svg class="social__icon social__icon--tw"><use xlink:href="#icon-twitter"/>Twitter</svg>
+        --    <svg class="social__icon social__icon--tw"><use xlink:href="#icon-twitter"/>Twitter</svg>
           </a>
           <a href="#" class="social__btn">
             <svg class="social__icon social__icon--fb"><use xlink:href="#icon-facebook"/>Facebook</svg>
@@ -242,6 +242,24 @@
 
     </div>
     <!-- end wrapper -->
+
+    <!-- popup-failure -->
+    <div class="popup popup--failure">
+      <h2 class="popup__title">Что-то пошло не&nbsp;так!</h2>
+      <p class="popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить
+      </p>
+      <button class="btn btn--blue btn--failure" type="button">Ок</button>
+    </div>
+
+    <!-- popup-success -->
+    <div class="popup popup--success">
+      <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+      <p class="popup__text">
+        Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.
+      </p>
+      <button class="btn btn--blue btn--success" type="button">Закрыть окно</button>
+    </div>
 
   </body>
 </html>
