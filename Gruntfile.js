@@ -157,7 +157,7 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-      scripts: {
+     scripts: {
         files: ["js/**/*.js"],
         tasks: ["copy:js", "uglify"],
         options: {
@@ -173,6 +173,7 @@ module.exports = function(grunt) {
   grunt.registerTask("build", [
     "clean",
     "copy",
+    "css",
     "svg",
     "imagemin",
     "uglify",
