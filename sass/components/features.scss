@@ -58,7 +58,7 @@
 
     &__title {
       width: 500px;
-      padding-top: 51px;
+      padding-top: 50px;
       padding-bottom: 28px;
 
       font-size: 21px;
@@ -85,14 +85,6 @@
 
 @media (min-width: $screen-lg-min) {
   .features {
-
-    &__title {
-      padding-top: 49px;
-    }
-
-    &__description {
-      padding-bottom: 50px;
-    }
 
     &__row {
       display: flex;
