@@ -114,6 +114,16 @@ module.exports = function(grunt) {
       }
     },
 
+    processhtml: {
+      target: {
+        files: {
+          "build/index.html": ["build/index.html"],
+          "build/photo.html": ["build/photo.html"],
+          "build/form.html": ["build/form.html"]
+        }
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -135,7 +145,7 @@ module.exports = function(grunt) {
     watch: {
       html: {
         files: ["*.html"],
-        tasks: ["copy:html"],
+        tasks: ["copy:html", "processhtml"],
         options: {
           spawn: false
         }
@@ -146,20 +156,26 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
+      },
+      scripts: {
+        files: ["js/**/*.js"],
+        tasks: ["copy:js", "uglify"],
+        options: {
+          spawn: false
+        }
       }
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
+  grunt.registerTask("svg", ["svgmin", "svgstore"]);
+  grunt.registerTask("css", ["sass", "postcss", "csso"]);
   grunt.registerTask("build", [
     "clean",
     "copy",
-    "sass",
-    "postcss",
-    "csso",
-    "symbols",
+    "svg",
     "imagemin",
-    "uglify"
+    "uglify",
+    "processhtml"
   ]);
 };

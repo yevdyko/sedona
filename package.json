@@ -24,6 +24,7 @@
     "grunt-contrib-watch": "0.6.1",
     "grunt-csso": "0.8.2",
     "grunt-postcss": "0.7.2",
+    "grunt-processhtml": "0.3.13",
     "grunt-sass": "1.1.0",
     "grunt-svgmin": "3.1.2",
     "grunt-svgstore": "1.0.0",
