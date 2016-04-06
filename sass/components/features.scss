@@ -82,17 +82,3 @@
     }
   }
 }
-
-@media (min-width: $screen-lg-min) {
-  .features {
-
-    &__row {
-      display: flex;
-      flex-direction: row;
-
-      &:nth-of-type(3) .feature-image {
-        order: -1;
-      }
-    }
-  }
-}
