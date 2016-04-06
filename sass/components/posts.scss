@@ -126,6 +126,10 @@
       &:first-child {
         width: 100%;
       }
+
+      &:last-child {
+        flex-grow: 0;
+      }
     }
 
     &__image {
