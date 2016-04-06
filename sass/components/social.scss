@@ -51,9 +51,16 @@
 
 @media (min-width: $screen-sm-min) {
   .social {
+    margin-right: 9px;
 
     &__btn {
       margin: 36px 3px;
     }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .social {
+    margin-right: 95px;
   }
 }
