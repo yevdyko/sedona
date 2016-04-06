@@ -20,6 +20,10 @@
 
       border-top: 1px solid $color-steelgray;
     }
+
+    &--contacts {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
@@ -48,7 +52,6 @@
 
       width: 100%;
       margin: 0;
-      margin-bottom: 11px;
 
       text-align: left;
 
@@ -66,6 +69,10 @@
         background-repeat: no-repeat;
         background-position: 50% 50%;
       }
+    }
+
+    &--phone {
+      margin-bottom: 10px;
     }
   }
 
@@ -97,6 +104,9 @@
     }
 
     &--rating {
+      cursor: pointer;
+
+      margin-right: 0;
       padding: 15px 0;
       padding-left: 78px;
 
@@ -132,6 +142,8 @@
     }
 
     &--checkbox {
+      cursor: pointer;
+
       padding: 15px 0;
       padding-left: 78px;
 
@@ -233,7 +245,16 @@
       padding-bottom: 25px;
 
       &::before {
-        display: none;
+        content: "";
+
+        position: absolute;
+        top: 45px;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+
+        border-top: 1px solid $color-steelgray;
       }
 
       &--rating {
@@ -348,6 +369,10 @@
     }
 
     &__error {
+      position: absolute;
+      top: 0;
+      right: 0;
+
       width: 50%;
       margin-top: 0;
       margin-bottom: 6px;
@@ -382,11 +407,11 @@
       }
 
       &--contacts {
-        padding-bottom: 74px;
+        padding-bottom: 54px;
       }
 
       &--sights {
-        width: 250px;
+        width: 260px;
         padding-bottom: 20px;
       }
 
@@ -400,7 +425,12 @@
     }
 
     &__contacts {
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+
+      width: 100%;
     }
 
     &__label {
@@ -418,9 +448,15 @@
       }
 
       &--contacts {
-        max-width: 100%;
-        padding-left: 20px;
+        order: 2;
+
+        margin-left: 0;
       }
+    }
+
+    &__field {
+      order: 3;
+      width: 217px;
     }
 
     &__input {
@@ -438,10 +474,22 @@
       }
 
       &--icon {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 50%;
 
         &::after {
-          top: 13px;
+          top: 32px;
+          right: 78px;
+        }
+      }
+
+      &--email {
+        &::after {
+          right: 1px;
         }
       }
 
@@ -451,11 +499,17 @@
     }
 
     &__error {
+      position: initial;
       width: 100%;
-      padding-left: 87px;
+      padding-left: 60px;
 
       order: 1;
       text-align: left;
+
+      &--email {
+        display: block;
+        padding-left: 137px;
+      }
     }
 
     &__checkbox {
@@ -467,7 +521,15 @@
     }
 
     &__icon {
-      top: 34px;
+      top: 52px;
+
+      &--phone {
+        right: 96px;
+      }
+
+      &--email {
+        right: 41px;
+      }
     }
   }
 }

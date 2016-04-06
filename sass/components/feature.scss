@@ -49,7 +49,11 @@
   }
 
   &--second &__title {
-    padding-top: 39px;
+    padding-top: 45px;
+  }
+
+  &--second &__number {
+    padding-bottom: 22px;
   }
 
   &--second &__text {
@@ -155,6 +159,8 @@
 @media (min-width: $screen-sm-min) {
   .feature {
     align-items: center;
+    flex-grow: 1;
+
     width: 33.33%;
     min-height: 256px;
 
@@ -178,7 +184,10 @@
 
     &__image-wrapper {
       display: block;
+
       justify-content: center;
+      flex-grow: 1;
+
       overflow: hidden;
 
       width: 66.66%;
@@ -316,8 +325,13 @@
       width: 220px;
     }
 
+    &--burger &__icon {
+      top: 62px;
+    }
+
     &--second &__title {
       padding-top: 54px;
+      padding-bottom: 9px;
     }
 
     &--second &__text {

@@ -58,7 +58,7 @@
 
     &__title {
       width: 500px;
-      padding-top: 51px;
+      padding-top: 50px;
       padding-bottom: 28px;
 
       font-size: 21px;
@@ -78,28 +78,6 @@
 
       &--third .feature--second {
         order: 1;
-      }
-    }
-  }
-}
-
-@media (min-width: $screen-lg-min) {
-  .features {
-
-    &__title {
-      padding-top: 49px;
-    }
-
-    &__description {
-      padding-bottom: 50px;
-    }
-
-    &__row {
-      display: flex;
-      flex-direction: row;
-
-      &:nth-of-type(3) .feature-image {
-        order: -1;
       }
     }
   }

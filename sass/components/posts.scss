@@ -113,6 +113,8 @@
       margin: 0;
       padding: 0;
 
+      flex-grow: 1;
+
       font-size: $font-size-base;
       line-height: 21px;
       text-align: left;
@@ -123,6 +125,10 @@
 
       &:first-child {
         width: 100%;
+      }
+
+      &:last-child {
+        flex-grow: 0;
       }
     }
 
@@ -242,6 +248,10 @@
 
     &__likes {
       padding-right: 10px;
+
+      &--large {
+        padding-right: 0;
+      }
     }
 
     &__icon {
