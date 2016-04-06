@@ -233,7 +233,16 @@
       padding-bottom: 25px;
 
       &::before {
-        display: none;
+        content: "";
+
+        position: absolute;
+        top: 45px;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+
+        border-top: 1px solid $color-steelgray;
       }
 
       &--rating {
@@ -355,6 +364,10 @@
       text-align: right;
 
       order: 1;
+
+      &--email {
+        display: none;
+      }
     }
   }
 }
@@ -382,11 +395,11 @@
       }
 
       &--contacts {
-        padding-bottom: 74px;
+        padding-bottom: 54px;
       }
 
       &--sights {
-        width: 250px;
+        width: 260px;
         padding-bottom: 20px;
       }
 
@@ -400,7 +413,12 @@
     }
 
     &__contacts {
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+
+      width: 100%;
     }
 
     &__label {
@@ -418,9 +436,15 @@
       }
 
       &--contacts {
-        max-width: 100%;
-        padding-left: 20px;
+        order: 2;
+
+        margin-left: 0;
       }
+    }
+
+    &__field {
+      order: 3;
+      width: 217px;
     }
 
     &__input {
@@ -438,10 +462,22 @@
       }
 
       &--icon {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 50%;
 
         &::after {
-          top: 13px;
+          top: 32px;
+          right: 78px;
+        }
+      }
+
+      &--email {
+        &::after {
+          right: 1px;
         }
       }
 
@@ -452,10 +488,14 @@
 
     &__error {
       width: 100%;
-      padding-left: 87px;
+      padding-left: 60px;
 
       order: 1;
       text-align: left;
+
+      &--email {
+        padding-left: 137px;
+      }
     }
 
     &__checkbox {
@@ -467,7 +507,15 @@
     }
 
     &__icon {
-      top: 34px;
+      top: 52px;
+
+      &--phone {
+        right: 96px;
+      }
+
+      &--email {
+        right: 41px;
+      }
     }
   }
 }

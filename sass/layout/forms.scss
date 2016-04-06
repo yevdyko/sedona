@@ -70,7 +70,7 @@ input[type="checkbox"]:checked + label::after {
   height: 56px;
 
   border-radius: 50%;
-  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  background: url("../img/icons/icon-tick.svg") no-repeat 50% 50%;
 }
 
 input::placeholder {
@@ -145,6 +145,6 @@ input[type="checkbox"]:checked:active + label::after {
   fill: #a4a4a4;
 
   border-radius: 50%;
-  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  background: url("../img/icons/icon-tick.svg") no-repeat 50% 50%;
 }
 
