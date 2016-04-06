@@ -16,18 +16,22 @@
 @media (min-width: $screen-sm-min) {
   .footer {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     margin: 0;
 
     &__hashtag {
       padding: 47px 0;
+      margin-left: 60px;
     }
   }
 }
 
 @media (min-width: $screen-lg-min) {
   .footer {
-    /*justify-content: space-between;*/
+
+    &__hashtag {
+      margin-left: 132px;
+    }
   }
 }
