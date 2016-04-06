@@ -1,5 +1,5 @@
   .menu {
-  position: relative;
+  display: none;
   min-height: 279px;
 
   &__list {
@@ -55,40 +55,14 @@
     color: $color-white;
   }
 
-  &__toggle,
-  &__toggle::before,
-  &__toggle::after {
-    content: "";
-    position: absolute;
-    top: 248px;
-    right: 20px;
-
+  &--show {
     display: block;
-    padding: 0;
-    width: 23px;
-    height: 4px;
-
-    font-size: 0;
-    line-height: 0;
-
-    background: $color-blue;
-    border: none;
-    cursor: pointer;
-  }
-
-  &__toggle::before {
-    top: 8px;
-    right: 0px;
-  }
-
-  &__toggle::after {
-    top: -8px;
-    right: 0px;
   }
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+@media (min-width: $screen-sm-min) {
   .menu {
+    display: block;
     min-height: 56px;
 
     &__toggle {
