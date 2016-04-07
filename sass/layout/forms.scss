@@ -19,16 +19,18 @@ input[type="text"] {
 input[type="tel"],
 input[type="email"] {
   padding-right: 80px;
+
+  @media (min-width: $screen-lg-min) {
+    order: 3;
+
+    width: 217px;
+  }
 }
 
 input[type="tel"] {
 
   @media (min-width: $screen-sm-min) {
     order: 2;
-  }
-
-  @media (min-width: $screen-lg-min) {
-    order: 3;
   }
 }
 
