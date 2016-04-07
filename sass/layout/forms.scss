@@ -10,8 +10,10 @@ input {
   color: $color-black;
   border: none;
   background-color: $color-lightgray;
+}
 
-  outline: none;
+input[type="text"] {
+  box-sizing: border-box;
 }
 
 input[type="tel"],
@@ -41,8 +43,8 @@ input[type="radio"]:checked + label::after {
   cursor: pointer;
 
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 19px;
+  left: 17px;
 
   display: block;
   width: 22px;
