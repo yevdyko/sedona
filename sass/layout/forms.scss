@@ -10,6 +10,8 @@ input {
   color: $color-black;
   border: none;
   background-color: $color-lightgray;
+
+  outline: none;
 }
 
 input[type="text"] {

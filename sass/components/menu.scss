@@ -89,22 +89,9 @@
       line-height: $line-height-base;
 
       color: $color-black;
-      background: $color-white;
+
 
       border: 0;
-
-      &:hover {
-        color: $color-blue;
-        background: $color-white;
-      }
-
-      &:active {
-        background: $color-white;
-
-        &:active &__link {
-          opacity: 0.3;
-        }
-      }
 
       &:last-child {
         border-bottom: none;
@@ -124,13 +111,17 @@
       text-decoration: none;
 
       color: $color-black;
+      background: $color-white;
+      border: none;
 
       &:hover {
         color: $color-blue;
+        background: $color-white;
       }
 
       &:active {
         color: #dadada;
+        background: $color-white;
       }
     }
   }
