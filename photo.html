@@ -25,16 +25,6 @@
       <!-- begin header -->
       <header class="header">
 
-        <!-- begin logo -->
-        <div class="logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="Sedona">
-          </picture>
-        </div>
-        <!-- end logo -->
-
         <!-- begin hamburger -->
         <button class="hamburger" type="button">
           <span class="hamburger__box"></span>
@@ -47,8 +37,8 @@
             <li class="menu__item">
               <a href="index.html" class="menu__link">Главная</a>
             </li>
-            <li class="menu__item menu__item--active">
-              <a href="photo.html" class="menu__link">Фото и видео</a>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active">Фото и видео</a>
             </li>
             <li class="menu__item">
               <a href="form.html" class="menu__link">Форма отзыва</a>
@@ -59,6 +49,22 @@
           </ul>
         </nav>
         <!-- end menu -->
+
+        <!-- begin logo -->
+        <div class="logo-wrapper">
+          <div class="logo">
+            <picture>
+              <source media="(min-width: 1200px)"
+                      srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)"
+                      srcset="img/logo-sedona-tablet.svg">
+              <img class="logo__image"
+                   src="img/logo-sedona-mobile.svg"
+                   alt="Sedona">
+            </picture>
+          </div>
+        </div>
+        <!-- end logo -->
 
       </header>
       <!-- end header -->
