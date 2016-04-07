@@ -3,8 +3,8 @@
   font-weight: 400;
   font-family: "PT Sans";
 
-  src: url(../../fonts/ptsans.woff) format("woff"),
-       url(../../fonts/ptsans.woff2) format("woff2");
+  src: url("../../fonts/ptsans.woff") format("woff"),
+       url("../../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-weight: 700;
   font-family: "PT Sans Bold";
 
-  src: url(../../fonts/ptsansbold.woff) format("woff"),
-       url(../../fonts/ptsansbold.woff2) format("woff2");
+  src: url("../../fonts/ptsansbold.woff") format("woff"),
+       url("../../fonts/ptsansbold.woff2") format("woff2");
 }
 
 body {
