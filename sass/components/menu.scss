@@ -1,6 +1,5 @@
   .menu {
   display: none;
-  min-height: 279px;
 
   &__list {
     position: relative;
@@ -21,24 +20,6 @@
     vertical-align: top;
     text-transform: uppercase;
 
-    background: #81b3d2;
-
-    border-top: 1px solid #9ac2db;
-    border-bottom: 1px solid #678fa8;
-
-    &:hover {
-      color: #ffffff;
-      background: #669ec0;
-    }
-
-    &:active {
-      background: #5496bd;
-
-    &:active &__link {
-        opacity: 0.3;
-      }
-    }
-
     &:last-child {
       border-bottom: none;
       box-shadow: inset 0 -10px 5px -5px #6d97b1;
@@ -53,6 +34,30 @@
     text-decoration: none;
 
     color: $color-white;
+
+    background-color: #81b3d2;
+
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+
+    &:hover {
+      background: #669ec0;
+    }
+
+    &:active {
+      color: #94b9d2;
+      background: #5496bd;
+    }
+
+    &--active {
+      cursor: default;
+
+      &:hover,
+      &:active {
+        color: $color-white;
+        background-color: $color-blue;
+      }
+    }
   }
 
   &--show {
@@ -83,22 +88,9 @@
       line-height: $line-height-base;
 
       color: $color-black;
-      background: $color-white;
+
 
       border: 0;
-
-      &:hover {
-        color: $color-blue;
-        background: $color-white;
-      }
-
-      &:active {
-        background: $color-white;
-
-        &:active &__link {
-          opacity: 0.3;
-        }
-      }
 
       &:last-child {
         border-bottom: none;
@@ -118,13 +110,17 @@
       text-decoration: none;
 
       color: $color-black;
+      background: $color-white;
+      border: none;
 
       &:hover {
         color: $color-blue;
+        background: $color-white;
       }
 
       &:active {
         color: #dadada;
+        background: $color-white;
       }
     }
   }

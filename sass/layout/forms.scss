@@ -14,19 +14,25 @@ input {
   outline: none;
 }
 
+input[type="text"] {
+  box-sizing: border-box;
+}
+
 input[type="tel"],
 input[type="email"] {
   padding-right: 80px;
+
+  @media (min-width: $screen-lg-min) {
+    order: 3;
+
+    width: 217px;
+  }
 }
 
 input[type="tel"] {
 
   @media (min-width: $screen-sm-min) {
     order: 2;
-  }
-
-  @media (min-width: $screen-lg-min) {
-    order: 3;
   }
 }
 
@@ -41,8 +47,8 @@ input[type="radio"]:checked + label::after {
   cursor: pointer;
 
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 19px;
+  left: 17px;
 
   display: block;
   width: 22px;

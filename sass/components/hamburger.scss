@@ -55,7 +55,7 @@
     }
   }
 
-  &__box::before {
+  .is-active &__box::before {
     top: 0;
 
     background-color: $color-white;
@@ -63,12 +63,16 @@
     transform: rotate(-45deg);
   }
 
-  &__box::after {
+  .is-active &__box::after {
     bottom: 0;
 
     background-color: $color-white;
 
     transform: rotate(45deg);
+  }
+
+  .is-active &__box {
+    background-color: transparent;
   }
 }
 
