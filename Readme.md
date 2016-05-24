@@ -1,48 +1,57 @@
-# Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Sedona
 
-* Студент: [Евгений Дыко](https://up.htmlacademy.ru/adaptive/6/user/157971).
-* Наставник: [Сергей Попов](https://up.htmlacademy.ru/adaptive/6/user/42761).
+A responsive website built using mobile-first design principles. It has one design for all screen resolution that can adapt to any size of screen - mobile, tablet and desktop.
 
----
+## Technologies used
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitignore`, `.travis.yml`, `package.json`._
+- HTML5, CSS3, JavaScript
+- Optimizing graphics for Retina display
+- Using SVG images
+- Using BEM methodology and semantic tags
+- Using preprocessor SASS
+- Using task automation with Grunt
+- Cross-browser support: Chrome, Firefox, Opera, Safari, Edge and IE11
 
----
+## Prerequisites
 
-### Памятка
+Install Node.js with [NVM](https://github.com/creationix/nvm):
 
-#### 1. Зарегистрируйтесь на Гитхабе
+    $ nvm install node
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+Install the latest [NPM](https://www.npmjs.com/) globally:
 
-#### 2. Создайте форк
+    $ npm install -g npm
 
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+Then install Grunt globally using NPM:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391938/5b3183f8-bdfc-11e5-888b-fa74dcf4d829.jpg">
+    $ npm install -g grunt-cli
 
-Получится вот так:
+## Setup
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391937/5b2fc266-bdfc-11e5-811d-dc5e1057ad87.jpg">
+Clone the repository:
 
-#### 3. Клонируйте репозиторий на свой компьютер
+    $ git clone git@github.com:yevdyko/sedona.git
 
-Будтьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку с иконкой компьютера и стрелкой, чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
+Change into the directory:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/12391902/17d49924-bdfc-11e5-8864-05fbcbddbb90.jpg">
+    $ cd sedona
 
-Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
+Install all dependencies with:
 
-#### 4. Начинайте обучение!
+    $ npm install
 
----
+## How to use
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
+Build the optimized project using the command:
 
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+    $ npm run build
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/157971-sedona.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/157971-sedona
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/157971-sedona.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/157971-sedona
+This create the optimized code for the project and puts it in the build folder
+
+Run the optimized project from the build folder with:
+
+    $ npm start
+
+So now in your browser just go to [http://localhost:3000](http://localhost:3000)
+
+## Screenshots
