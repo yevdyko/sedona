@@ -8,3 +8,4 @@ Thumbs.db
 *.psd
 *.ai
 css/*.css
+.grunt/

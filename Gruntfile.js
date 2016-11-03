@@ -157,13 +157,20 @@ module.exports = function(grunt) {
           spawn: false
         }
       },
-     scripts: {
+      scripts: {
         files: ["js/**/*.js"],
         tasks: ["copy:js", "uglify"],
         options: {
           spawn: false
         }
       }
+    },
+
+    'gh-pages': {
+      options: {
+        base: 'build'
+      },
+      src: ['**']
     }
   });
 
@@ -179,4 +186,5 @@ module.exports = function(grunt) {
     "uglify",
     "processhtml"
   ]);
+  grunt.registerTask("deploy", ['gh-pages']);
 };
