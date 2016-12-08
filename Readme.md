@@ -6,10 +6,10 @@ A responsive website built using mobile-first design principles. It has one desi
 
 - HTML5, CSS3, JavaScript
 - Optimizing graphics for Retina display
-- Using SVG images
-- Using BEM methodology and semantic tags
-- Using preprocessor SASS
-- Using task automation with Grunt
+- SVG images
+- BEM methodology and semantic elements
+- Preprocessor SASS
+- Task automation with Grunt
 - Cross-browser support: Chrome, Firefox, Opera, Safari, Edge and IE11
 
 ## Prerequisites
@@ -53,5 +53,3 @@ Run the optimized project from the build folder with:
     $ npm start
 
 So now in your browser just go to [http://localhost:3000](http://localhost:3000)
-
-## Screenshots
